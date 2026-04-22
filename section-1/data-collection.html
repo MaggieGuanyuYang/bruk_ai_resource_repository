@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Collection &amp; Processing | BR-UK AI</title>
+  <meta name="description" content="AI tools for data collection and processing: chatbots (Qualtrics, Rasa), transcription (Vink, Otter), Julius AI, synthetic data generation.">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true">BR</span>
+        <span class="brand__text">
+          <span class="brand__name">AI Tools &amp; Resources</span>
+          <span class="brand__tag">Behavioural Research UK</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle primary navigation menu">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="index.html" class="is-active">1. Living Guide</a>
+        <a href="../section-2/index.html">2. Ethics &amp; Responsibility</a>
+        <a href="../section-3.html">3. Learning Resources</a>
+        <a href="../section-4.html">4. Advice Sessions</a>
+        <a href="../about.html">BR-UK Statement</a>
+        <a href="../section-5.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container container--narrow">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="index.html">Section 1: Living Guide</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current">Data Collection &amp; Processing</span>
+      </nav>
+
+      <span class="section-badge">Section 1 · Stage 3</span>
+      <h1>Data Collection &amp; Processing</h1>
+
+      <div class="prose">
+        <p class="hero__lede" style="font-size:1.1rem; color: var(--ink-700);">
+          AI tools can streamline many stages of data collection and processing,
+          improving speed, efficiency, and in some cases, participant engagement. For
+          example, AI-powered chatbots can support data collection by guiding respondents
+          through surveys in an engaging, conversational format.
+        </p>
+        <p>That said, AI should be seen as a tool to support — not replace — human
+          researchers, especially when it comes to ensuring data quality and ethical
+          oversight.</p>
+
+        <div class="quicknav">
+          <h4>On this page</h4>
+          <ul>
+            <li><a href="#help">What AI can help with</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#chatbots-qual">Chatbots for qualitative data collection</a></li>
+            <li><a href="#interventions">Delivering interventions</a></li>
+            <li><a href="#synthetic">Synthetic data and populations</a></li>
+          </ul>
+        </div>
+
+        <h2 id="help">What AI can help with</h2>
+        <ul>
+          <li>Collecting and processing both qualitative and quantitative data (e.g. using chatbots or AI transcription tools).</li>
+          <li>Creating synthetic data or populations to study in isolation or supplement human datasets.
+            <ul>
+              <li>Synthetic data is artificially generated to mimic the statistical properties of real data, without containing any identifiable information — helping to protect individuals' privacy.</li>
+            </ul>
+          </li>
+          <li>Delivering real-time behavioural interventions or guiding participants through them (e.g. via virtual coaches).</li>
+          <li>Automating reminders and adapting interventions based on user responses.</li>
+        </ul>
+
+        <h2 id="tools">Tools</h2>
+
+        <p>Common survey platforms, such as <a href="https://www.qualtrics.com/news/qualtrics-unveils-groundbreaking-ai-innovations-to-transform-understanding-of-customers-employees-and-prospects/">Qualtrics</a> (paid), are now integrating AI features such as Conversational Feedback, which uses GPT-4 Turbo to generate follow-up questions based on respondents' initial answers. More flexible solutions include customisable chatbots built with platforms like <a href="https://rasa.com/">Rasa</a> (free &amp; paid), which can be tailored for behavioural studies to simulate interviews or collect narrative data. Researchers have also started using LLMs in moderated or semi-structured conversational formats to guide participants through qualitative tasks, improving scalability and responsiveness while maintaining conversational depth.</p>
+
+        <p><a href="https://doi.org/10.1186/s13104-024-06842-4">Vink</a> is a free, open-source transcription tool that adapts OpenAI's Whisper speech-to-text model to support rigorous and efficient qualitative research. Designed to be accessible and privacy-conscious, Vink enables researchers to transcribe multilingual interview data on local machines without cost or internet dependency. For qualitative interview data, <a href="https://otter.ai/">Otter AI</a> can help transcribe audio recordings to text. However, enhanced informed consent, secure data management, and human verification are highly recommended in academic research.</p>
+
+        <p>For data processing, <a href="https://julius.ai/glossary/data-transformation">Julius AI Data Transformation</a> can produce a preliminary assessment report on your dataset that identifies errors and outliers before transformation. This validation process allows users to detect missing values and add relevant data points for the analysis. See also this <a href="https://community.julius.ai/t/guide-data-transformation-and-linear-regression/5012">blog post on data transformation</a>.</p>
+
+        <p>There are general-purpose synthetic data generation tools, such as <a href="https://docs.sdk.ydata.ai/latest/synthetic_data/">YData's SDK</a>, that use generative AI to create behavioural, tabular, and time-series data under specific conditions. More specialised tools also exist — for example, <a href="https://github.com/synthetichealth/synthea/wiki">Synthea</a> is an open-source synthetic patient generator that simulates complete, realistic (but fictional) medical histories for public health research and intervention testing.</p>
+
+        <h2 id="chatbots-qual">Example: Chatbots for qualitative data collection</h2>
+        <p>Researchers developed an AI-powered chatbot to conduct open-ended surveys using Juji (juji.io), a platform where users can create customised chatbots. In partnership with a market research firm, they conducted a field study exploring players' perceptions of new video game trailers. The chatbot collected more informative and relevant responses than traditional online surveys, improving the overall quality of the data.</p>
+        <blockquote>
+          <p>Xiao, Z., Zhou, M. X., Liao, Q. V., Mark, G., Chi, C., Chen, W., &amp; Yang, H. (2020). Tell Me About Yourself: Using an AI-Powered Chatbot to Conduct Conversational Surveys with Open-ended Questions. <em>ACM Transactions on Computer-Human Interaction</em>, 27(3), 1–37. <a href="https://doi.org/10.1145/3381804">https://doi.org/10.1145/3381804</a></p>
+        </blockquote>
+        <p>However, other researchers compared the effectiveness of chatbots and traditional web surveys in longitudinal data collection on daily news consumption. The findings indicated that web surveys generally yielded higher data quality and more favourable user evaluation. While chatbots offer the potential for increased interactivity and engagement, the study cautioned that they do not necessarily enhance data quality.</p>
+        <blockquote>
+          <p>Zarouali, B., Araujo, T., Ohme, J., &amp; de Vreese, C. (2024). Comparing Chatbots and Online Surveys for (Longitudinal) Data Collection: An Investigation of Response Characteristics, Data Quality, and User Evaluation. <em>Communication Methods and Measures</em>, 18(1), 72–91. <a href="https://doi.org/10.1080/19312458.2022.2156489">https://doi.org/10.1080/19312458.2022.2156489</a></p>
+        </blockquote>
+
+        <h2 id="interventions">Example: Delivering interventions</h2>
+        <p>Researchers conducted a systematic review to evaluate the feasibility and effectiveness of AI-based chatbots for promoting health behaviour change across a range of domains, such as smoking cessation. The review found that chatbots can deliver personalised, engaging, and scalable interventions, with several studies reporting positive outcomes on behaviour and user satisfaction. However, the evidence base remains limited by short follow-up durations, variability in chatbot design, and inconsistent reporting of outcomes. The authors conclude that while AI chatbots are a promising tool for health promotion, more rigorous and long-term evaluations are needed to establish their effectiveness and guide best practices.</p>
+        <blockquote>
+          <p>Aggarwal, A., Tam, C. C., Wu, D., Li, X., &amp; Qiao, S. (2023). Artificial Intelligence–Based Chatbots for Promoting Health Behavioral Changes: Systematic Review. <em>Journal of Medical Internet Research</em>, 25(1), e40789. <a href="https://doi.org/10.2196/40789">https://doi.org/10.2196/40789</a></p>
+        </blockquote>
+
+        <h2 id="synthetic">Example: Synthetic data and populations</h2>
+        <p>Researchers developed an agentic AI architecture to simulate the attitudes and behaviours of over a thousand real individuals. By applying large language models to qualitative interviews, the generative agents replicated participants' responses on the General Social Survey with 85% accuracy. This approach demonstrates the potential of AI-driven agents to emulate human behaviour in social science research, offering a scalable method for studying individual and collective behaviours.</p>
+        <blockquote>
+          <p>Park, J. S., Zou, C. Q., Shaw, A., Hill, B. M., Cai, C., Morris, M. R., Willer, R., Liang, P., &amp; Bernstein, M. S. (2024). Generative Agent Simulations of 1,000 People. <em>arXiv:2411.10109</em>. <a href="https://doi.org/10.48550/arXiv.2411.10109">https://doi.org/10.48550/arXiv.2411.10109</a></p>
+        </blockquote>
+        <p>However, while agentic AI provides opportunities, it also has risks. Researchers of a recent paper on potential harms arising from increasingly agentic AI systems argue that as machine learning systems gain more autonomy, they can introduce new forms of harm, particularly affecting marginalised communities. They emphasise the importance of proactively anticipating these harms rather than merely responding to them after deployment. The paper concludes that recognising the agency of algorithmic systems does not absolve human responsibility but highlights the need for robust governance to mitigate systemic and long-term impacts.</p>
+        <blockquote>
+          <p>Chan, A., Salganik, R., Markelius, A., Pang, C., Rajkumar, N., Krasheninnikov, D., Langosco, L., He, Z., Duan, Y., Carroll, M., Lin, M., Mayhew, A., Collins, K., Molamohammadi, M., Burden, J., Zhao, W., Rismani, S., Voudouris, K., Bhatt, U., … Maharaj, T. (2023). Harms from Increasingly Agentic Algorithmic Systems. <em>Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency</em>, 651–666. <a href="https://doi.org/10.1145/3593013.3594033">https://doi.org/10.1145/3593013.3594033</a></p>
+        </blockquote>
+      </div>
+
+      <nav class="pager" aria-label="Page navigation">
+        <a class="pager__prev" href="hypothesis-generation.html">
+          <div class="pager__label">Previous stage</div>
+          <div class="pager__title">Hypothesis Generation &amp; Study Design</div>
+        </a>
+        <a class="pager__next" href="data-analysis.html">
+          <div class="pager__label">Next stage</div>
+          <div class="pager__title">Data Analysis &amp; Interpretation</div>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <h4>About BR-UK</h4>
+        <p>The Behavioural Research UK Leadership Hub is supported by the Economic and Social Research Council [Grant Number ES/Y001044/1].</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html">1. Living Guide</a></li>
+          <li><a href="../section-2/index.html">2. Ethics &amp; Responsibility</a></li>
+          <li><a href="../section-3.html">3. Learning Resources</a></li>
+          <li><a href="../section-4.html">4. Advice Sessions</a></li>
+          <li><a href="../about.html">BR-UK Statement</a></li>
+          <li><a href="../section-5.html">5. Disclaimer &amp; Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58">Contact form</a></li>
+          <li><a href="https://usher.ed.ac.uk/behavioural-research-uk/join-our-mailing-list">Join our mailing list</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© Behavioural Research UK. Content licensed for research and educational use.</span>
+      <span>A living repository · Last content review 2026</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

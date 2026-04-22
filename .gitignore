@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local verification artifacts (not part of the published site)
+.playwright-mcp/
+home-*.png
+lit-review.png
+section-1.png
+section-2-after.png
+mobile-menu-open.png
+
+# Local server logs
+*.log
