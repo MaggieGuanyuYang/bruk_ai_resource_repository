@@ -1,0 +1,73 @@
+# section-1/writing-reporting.html — Stage 5.
+
+title: "Writing &amp; Reporting | BR-UK AI"
+description: "AI tools for writing, citations, pre-submission peer review, and research dissemination via NotebookLM, Gamma AI, Napkin AI."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-1", label: "Section 1: Living Guide" }
+  - { label: "Writing &amp; Reporting" }
+
+badge: "Section 1 · Stage 5"
+heading: "Writing &amp; Reporting"
+
+body:
+  - prose:
+      - lede: |
+          Apart from the preceding processes of research, Generative AI tools also offer
+          support from drafting and editing to peer review and public engagement.
+      - markdown: |
+          AI can:
+
+          - Assist in drafting and refining reports, summarising findings, and generating citations.
+          - Serve as a pre-submission reviewer and give you suggestions for edits before you submit your work to publishers.
+          - Help you effectively communicate your research by creating simple visuals and podcasts.
+      - quicknav:
+          items:
+            - { href: "#writing",      label: "Writing &amp; reporting" }
+            - { href: "#caution",      label: "Caution" }
+            - { href: "#publication",  label: "Publication" }
+            - { href: "#presentation", label: "Presentation &amp; outreach" }
+            - { href: "#citations",    label: "Citation generation tools" }
+            - { href: "#further",      label: "Further reading" }
+      - h2: { id: "writing", text: "Writing &amp; reporting" }
+      - markdown: |
+          GenAI tools, powered by large language models, offer valuable assistance throughout the writing process. These tools can enhance your research reporting by: (1) proposing structured outlines to organise your findings logically, (2) refining your writing for clarity and coherence while preserving your scholarly voice, and (3) formatting citations according to required academic standards.
+
+          When confronted with writer's block — a common challenge in academic writing — these AI assistants can provide useful prompts and alternative perspectives that stimulate your thinking and help you get started in your write-up journey.
+
+          Common tools include ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic), Microsoft Copilot, Perplexity AI, and Grammarly. See [LSE's guide on Drafting and Re-writing](https://www.lse.ac.uk/DSI/AI/AI-Research/Drafting-and-Re-writing). [Watch this video](https://www.youtube.com/watch?v=Dm5zgBQoi_w) for a walkthrough of an academic writing process.
+      - h2: { id: "caution", text: "Caution" }
+      - callout:
+          kind: "caution"
+          body: |
+            GenAI may overuse certain words or constructions and might not always align with the nuances of academic writing. Always review and refine the suggestions to maintain your own voice and adhere to academic conventions.
+
+            Always verify the accuracy of AI-generated citations, as these tools can sometimes produce inaccurate or fabricated information ("hallucinations").
+      - h2: { id: "publication", text: "Publication" }
+      - markdown: |
+          There already exist a few AI tools to help boost your chance at publication by going through a pre-submission "peer" review. A recent Nature article titled [AI is transforming peer review — and many scientists are worried](https://www.nature.com/articles/d41586-025-00894-7) discussed several such AI tools.
+      - tool_grid:
+          - { url: "https://paper-wizard.com/",            name: "Paper-Wizard", desc: "Generates comprehensive multi-page reviews that examine methodological designs and statistical rigour when authors upload their work." }
+          - { url: "https://groundedai.company/veracity/", name: "Veracity",     desc: "Currently in private beta. Offers pre-submission fact-checking by verifying whether cited papers exist and whether they truly support the authors' claims." }
+      - markdown: |
+          While debate continues about AI's appropriate role in formal peer review, these pre-submission tools represent a potentially less controversial application that could benefit both authors and reviewers.
+      - h2: { id: "presentation", text: "Presentation &amp; outreach" }
+      - markdown: |
+          Explore innovative AI tools like NotebookLM, Gamma AI, and Napkin AI to transform your research dissemination. These platforms enable you to convert complex findings into engaging podcasts, visually compelling presentations, and intuitive graphics, enhancing accessibility and impact across diverse audiences.
+      - tool_grid:
+          - { url: "https://notebooklm.google/", name: "NotebookLM", tag: "Free",           desc: "Its podcast creation function offers a novel way to disseminate your research. Simply upload your protocols or written reports, and a 15-minute podcast between two AI characters will be generated. You can even jump in during the \"broadcast\" to ask the AI questions.", link_url: "https://artificialthought.substack.com/", link_text: "Listen to Artificial Thought podcast" }
+          - { url: "https://gamma.app/",         name: "Gamma AI",  tag: "Free &amp; paid", desc: "Particularly useful for generating slides. Excels at transforming text-based inputs — prompts, outlines, or existing documents — into polished, visually engaging presentations. Great for conferences, lectures, or public engagement.", link_url: "https://www.youtube.com/watch?v=AMCwO4UZAA8", link_text: "Watch a video tutorial" }
+          - { url: "https://www.napkin.ai/",     name: "Napkin AI", tag: "Free",           desc: "A visualisation platform that transforms your writing into graphs. If you're preparing visuals for a slide deck, Napkin AI can suggest effective and engaging ways to organise your ideas graphically — helping you move away from text-heavy slides. It also assists in designing research posters that communicate your message more effectively." }
+      - h2: { id: "citations", text: "Citation generation &amp; formatting tools" }
+      - markdown: |
+          - [Scribbr Citation Generator](https://www.scribbr.co.uk/referencing/generator/) (free) — provides APA Citation Checker, Citation Editing, and Citation Generator.
+          - [QuillBot Citation Generator](https://quillbot.com/citation-generator) (free) — create, edit, and save citations in over 1,000 different styles.
+          - [Grammarly Citation Generator](https://www.grammarly.com/citations) (free) — provides formatted APA, MLA, and Chicago-style citations.
+      - h2: { id: "further", text: "Further reading" }
+      - markdown: |
+          - [Using artificial intelligence in academic writing and research: An essential productivity tool](https://www.sciencedirect.com/science/article/pii/S2666990024000120#sec0003)
+
+pager:
+  prev: { ref: "section-1.data-analysis", label: "Previous stage", title: "Data Analysis &amp; Interpretation" }
+  next: { ref: "section-2",               label: "Continue to",    title: "Section 2: Ethics &amp; Responsibility" }

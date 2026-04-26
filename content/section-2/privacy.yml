@@ -1,0 +1,48 @@
+# section-2/privacy.html — Topic 3.
+
+title: "Privacy | BR-UK AI"
+description: "AI and privacy: private information in outputs, how inputs may be stored or reused, and researcher safeguards."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-2", label: "Section 2: Ethics &amp; Responsibility" }
+  - { label: "Privacy" }
+
+badge: "Section 2 · Topic 3"
+heading: "Privacy"
+
+body:
+  - prose:
+      - lede: |
+          AI tools raise important privacy concerns for researchers, especially when
+          they're handling personal or sensitive information. To use AI responsibly, it's
+          essential to consider privacy from two key angles.
+      - h2: "Why privacy matters in AI research"
+      - h3: "1. Private information in AI outputs"
+      - markdown: |
+          Some generative AI tools have been known to include private or confidential information in their responses. While developers claim their training data was obtained legally and ethically, there's often little transparency about what data was used and where it came from. This makes it hard to guarantee that outputs won't contain material that infringes on someone's privacy.
+      - h3: "2. How AI inputs may be stored, shared, or reused"
+      - markdown: |
+          When you enter data into an AI tool, that input (and sometimes the output) may be saved, analysed, or reused to improve the model. Unless the tool explicitly states otherwise, you should not assume anything you input is private or confidential.
+      - h2: "Researchers should"
+      - markdown: |
+          - Avoid entering personal, sensitive, or confidential data into third-party tools without strong privacy safeguards.
+          - Check with your institution to ensure the tools you use meet its privacy and security standards.
+          - Understand the terms of any AI tool you use, especially around data handling and storage.
+          - Obtain informed consent from participants that you plan to use an AI tool to process their data.
+
+          This is especially important if you're working with identifiable or sensitive information.
+      - callout:
+          kind: "warning"
+          heading: "A deeper issue"
+          body: |
+            AI tools often rely on vast amounts of personal data to make predictions or generate content. As their capabilities grow, so do the risks to individual privacy, including how data is collected, shared, stored, and inferred. Yet research into AI and privacy often lags behind technological development. As a result, scholars and practitioners need to stay proactive in protecting data and building trust, particularly when working with marginalised or vulnerable populations.
+      - h2: "Further reading"
+      - markdown: |
+          - [More on emerging AI privacy concerns in research](https://www.sciencedirect.com/science/article/pii/S2352250X24000423?via%3Dihub=)
+          - [Guidance on AI and data protection](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/) — ICO
+          - [BR-UK Privacy Statement September 2025](https://usher.ed.ac.uk/sites/default/files/2025-09/BR-UK%20Privacy%20Statement.pdf) (PDF)
+
+pager:
+  prev: { ref: "section-2.biases",         label: "Previous topic", title: "Biases" }
+  next: { ref: "section-2.sustainability", label: "Next topic",     title: "Sustainability Concerns" }

@@ -1,0 +1,58 @@
+# section-2/index.html — Section 2 overview ("Ethics, Sustainability & Responsible AI Use").
+
+title: "Section 2: Ethics, Sustainability & Responsible AI Use | BR-UK"
+description: "Disclosure, privacy, biases, sustainability, and key regulations for AI in behavioural research."
+
+breadcrumb:
+  - { ref: "home", label: "Home" }
+  - { label: "Section 2: Ethics, Sustainability &amp; Responsible AI Use" }
+
+badge: "Section 2"
+heading: "Ethics, Sustainability &amp; Responsible AI Use"
+
+body:
+  - prose:
+      - lede:
+          font_size: "1.12rem"
+          text: |
+            Responsible AI usage in research involves multiple dimensions from regulatory
+            compliance to awareness of broader societal impact. While comprehensive frameworks
+            exist, this section offers an overview of critical issues — Disclosure &amp;
+            Transparency, Privacy, Biases, Sustainability Concerns, and Key Regulations —
+            with links to further resources if you want to learn more.
+      - h2: "Jump to a topic"
+  - subpage_list:
+      - ref: "section-2.disclosure"
+        title: "Disclosure &amp; Transparency"
+        blurb: "When and how to disclose AI use; with dedicated guides for publishers and UK funders below."
+        children:
+          - { ref: "section-2.publishers", label: "↳ What publishers said about AI use <em>(Nature, Elsevier, SAGE, Wiley, APA, and more)</em>" }
+          - { ref: "section-2.uk-funders", label: "↳ What UK funders said about AI use <em>(UKRI, Wellcome, Leverhulme, British Academy, and more)</em>" }
+      - ref: "section-2.biases"
+        title: "Biases"
+        blurb: "How AI systems amplify existing biases — with a real-world policing example."
+      - ref: "section-2.privacy"
+        title: "Privacy"
+        blurb: "Private information in outputs, how inputs may be stored, and researcher safeguards."
+      - ref: "section-2.sustainability"
+        title: "Sustainability Concerns"
+        blurb: "Energy, water, carbon, and the supply chain — plus how AI might still be part of the solution."
+      - ref: "section-2.key-regulations"
+        title: "Key Regulations"
+        blurb: "Copyright (CDPA 1988), UK GDPR, international and UK regulations, and university guidance."
+  - prose:
+      - h2: "Three questions to ask before you integrate AI"
+      - markdown: |
+          1. What are the tangible benefits?
+          2. What is the potential impact, and are there ethical concerns?
+          3. Is AI the only way to achieve the desired outcome?
+      - h2: "Recommended starting reads"
+      - markdown: |
+          - [Embracing AI with integrity: A practical guide for researchers](https://ukrio.org/ukrio-resources/embracing-ai-with-integrity/) — UKRIO
+          - [Living guidelines on the responsible use of generative AI in research](https://research-and-innovation.ec.europa.eu/document/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en) — European Commission
+          - [MIT AI Risk Repository](https://airisk.mit.edu/)
+          - Slattery, P. et al. (2024). [A systematic literature review of AI-related risks](https://doi.org/10.48550/arXiv.2408.12622).
+
+pager:
+  prev: { ref: "section-1.writing-reporting", label: "Previous section", title: "1.5 Writing &amp; Reporting" }
+  next: { ref: "section-2.disclosure",        label: "Start with",       title: "Disclosure &amp; Transparency" }

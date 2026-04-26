@@ -1,0 +1,118 @@
+# index.html — Home page.
+# Template: home.html (set automatically by build.py).
+# Footer is overridden here because the home page has fuller text and
+# an extra "Privacy Statement" link compared to other pages.
+
+title: "BR-UK AI Tools & Resources Repository"
+description: "A curated guide for behavioural researchers on using AI responsibly and effectively across the research lifecycle — from literature review to writing up."
+
+footer_about: "The Behavioural Research UK Leadership Hub is supported by the Economic and Social Research Council [Grant Number ES/Y001044/1], comprising partner institutions and government bodies across the UK."
+footer_contact:
+  - { url: "https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58", label: "Contact form" }
+  - { url: "https://usher.ed.ac.uk/behavioural-research-uk/join-our-mailing-list", label: "Join our mailing list" }
+  - { url: "https://usher.ed.ac.uk/sites/default/files/2025-09/BR-UK%20Privacy%20Statement.pdf", label: "Privacy Statement (PDF)" }
+
+# Top of page — the teal hero band.
+hero:
+  eyebrow: "Behavioural Research UK · Living repository"
+  heading: "AI tools and resources for behavioural researchers"
+  lede: |
+    A practical, continually updated guide for using AI responsibly across every stage
+    of the research lifecycle — from literature reviews and study design through to
+    analysis, writing, and dissemination. Curated by and for the behavioural research
+    community.
+  actions:
+    - { style: "primary", ref: "section-1", label: "Start with the Living Guide" }
+    - { style: "ghost",   href: "#sections", label: "Browse all sections" }
+
+# "Explore the repository" intro text directly above the section grid.
+explore:
+  heading: "Explore the repository"
+  intro: |
+    Six sections cover the full picture: a stage-by-stage living guide, ethics and
+    regulations, external learning resources, our advice sessions, and how to get in
+    touch. Click any section to go deeper.
+
+# The six big section cards on the home page, in order.
+section_cards:
+  - ref: "section-1"
+    num: "Section 1"
+    title: "Living Guide of AI in the Behavioural Research Process"
+    desc: |
+      Stage-by-stage guidance on using AI in literature review, hypothesis generation,
+      data collection, analysis, and writing. Includes real-world examples and tool
+      recommendations.
+    meta: "5 sub-pages"
+  - ref: "section-2"
+    num: "Section 2"
+    title: "Ethics, Sustainability &amp; Responsible AI Use"
+    desc: |
+      Disclosure and transparency, biases, privacy, sustainability, and the regulatory
+      landscape. Includes funder and publisher guidance, and an overview of UK
+      regulations.
+    meta: "5 sub-pages + funder &amp; publisher guides"
+  - ref: "section-3"
+    num: "Section 3"
+    title: "General AI Learning Resources"
+    desc: |
+      A curated set of courses, webinars, and YouTube channels — from Elements of AI
+      and Harvard CS50 to researcher-specific tutorials and advanced deep-learning
+      courses.
+    meta: "Courses, videos, podcasts"
+  - ref: "section-4"
+    num: "Section 4"
+    title: "BR-UK AI Advice Sessions"
+    desc: |
+      Catch up on three online advice sessions where researchers discussed AI
+      questions with Janna Hastings, Susan Michie, Amy Rodger, Maggie Guanyu Yang and
+      Robert West.
+    meta: "Session recordings"
+  - ref: "about"
+    num: "BR-UK Statement"
+    title: "Using AI for Behavioural Research Effectively and Responsibly"
+    desc: |
+      A forthcoming living statement addressing ethical standards, practical benefits
+      and limitations, and recommendations for everyone doing, using, funding, or
+      commissioning behavioural research.
+    meta: "Living document · Coming 2026"
+  - ref: "section-5"
+    num: "Section 5"
+    title: "Disclaimer &amp; Contact"
+    desc: |
+      The repository is a living effort — resources evolve quickly. Here's how to get
+      in touch with the BR-UK team and suggest additions, corrections, or feedback.
+    meta: "Contact form &amp; emails"
+
+# The three teal "audience" tiles below the section grid.
+audience:
+  - heading: "New to AI in research?"
+    icon: |-
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+    body: "Start with Section 1's introduction to see how AI can plug into each stage of the behavioural research pipeline, and Section 3 for background learning."
+  - heading: "Short on time?"
+    icon: |-
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 2"/></svg>
+    body: 'Use the sub-page for the stage you''re working on right now — literature review, study design, data collection, analysis, or writing — and skim the "Tools" block.'
+  - heading: "Planning a grant or paper?"
+    icon: |-
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    body: "Section 2 has the disclosure rules — including what UK funders and major publishers expect when AI is used in applications or manuscripts."
+
+# The "What this repository is — and isn't" block at the bottom.
+what:
+  heading: "What this repository is — and isn't"
+  paragraphs:
+    - |
+      AI — systems that produce content, predictions, recommendations, or decisions to
+      achieve specific goals — is now woven through the behavioural research workflow.
+      Used well, it can enhance what we do. Used badly, it can mislead research and
+      harm participants.
+    - |
+      This repository is a <strong>living, curated guide</strong> built by the
+      Behavioural Research UK community. It is not definitive, and we are not responsible
+      for the external tools and resources signposted within it — see the
+      <a href="section-5.html">full disclaimer</a>. Keep in mind the maxim: <em>poor-quality input
+      leads to poor-quality output</em>.
+    - |
+      Have a tool, study, or resource to add? Please
+      <a href="https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58">share it via our suggestion form</a>.

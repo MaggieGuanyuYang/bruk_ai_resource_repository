@@ -1,0 +1,25 @@
+{%- extends "_base.html" -%}
+{%- block main %}
+  <main id="main">
+    <div class="{{ data.get('container', 'container container--narrow') }}">
+{%- if data.get('breadcrumb') %}
+{{ render_blocks([{'breadcrumb': data['breadcrumb']}], indent=6) }}
+{%- endif %}
+
+{%- if data.get('badge') %}
+
+      <span class="section-badge">{{ data.badge | safe }}</span>
+{%- endif %}
+      <h1>{{ data.heading | safe_amp | safe }}</h1>
+{%- if data.get('h2_alt') %}
+      <h2 style="{{ data.h2_alt.style | default('color: var(--teal-700); margin-top: 0.2em; font-weight: 500;') }}">{{ data.h2_alt.text | safe_amp | safe }}</h2>
+{%- endif %}
+
+{{ render_blocks(data.get('body', []), indent=6) }}
+{%- if data.get('pager') %}
+
+{{ render_blocks([{'pager': data['pager']}], indent=6) }}
+{%- endif %}
+    </div>
+  </main>
+{% endblock -%}

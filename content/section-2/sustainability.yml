@@ -1,0 +1,80 @@
+# section-2/sustainability.html — Topic 4.
+
+title: "Sustainability Concerns | BR-UK AI"
+description: "The environmental cost of AI — energy, water, carbon, supply chains — plus how AI might still be part of the sustainability solution."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-2", label: "Section 2: Ethics &amp; Responsibility" }
+  - { label: "Sustainability Concerns" }
+
+badge: "Section 2 · Topic 4"
+heading: "Sustainability Concerns"
+
+body:
+  - prose:
+      - lede: |
+          AI has the potential to support sustainable development goals, but it also comes
+          with significant sustainability concerns. As AI tools become more embedded in
+          the research process, we must ask: how do we harness AI for sustainability
+          without deepening the harm it causes?
+      - markdown: |
+          AI systems, especially large language models like ChatGPT, require enormous amounts of energy and water to train and run. [Do you know that one ChatGPT query uses roughly five times more electrical power than a simple internet search?](https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117)
+      - h2: "Where AI's resource demand comes from"
+      - h3: "Data centres"
+      - markdown: |
+          More data centres that power AI. They use mostly fossil-fuel electricity and consume vast amounts of water for cooling.
+      - blockquote:
+          body: |
+            "Global electricity demand from data centres is set to more than double over the next five years, consuming as much electricity by 2030 as the whole of Japan does today."
+          cite: "— Fatih Birol, IEA Executive Director"
+      - h3: "Carbon emissions from training"
+      - markdown: |
+          Carbon emissions from AI training are steadily increasing. Training early AI models, such as AlexNet (2012), had modest amounts of carbon emissions at 0.01 tons. More recent models have significantly higher emissions:
+      - data_table:
+          headers: ["Model", "Year", "Carbon emissions (tons)"]
+          rows:
+            - ["AlexNet",                     "2012", "0.01"]
+            - ["GPT-3",                       "2020", "588"]
+            - ["GPT-4",                       "2023", "5,184"]
+            - ["Llama 3.1 405B",              "2024", "8,930"]
+            - ["Average American (annual)",   "—",    "18"]
+      - markdown: |
+          *Source: Stanford AI Index Report 2025, p. 13.*
+      - h3: "Hardware production"
+      - markdown: |
+          The computers that run AI need rare minerals like gold, tantalum, and tungsten, which are often mined in environmentally destructive ways.
+      - h3: "Global supply chain"
+      - markdown: |
+          Research also reveals that AI's environmental impact extends beyond data centres to encompass a complex global supply chain that extracts resources, manufactures components, and exploits labour across multiple industries and countries. Fieldwork in Querétaro, Mexico illustrates how AI data centres consume local water and energy supplies, creating scarcity for surrounding communities like Maconi. [This situation highlights the often hidden environmental justice concerns that arise when technological advancement conflicts with basic resource needs of local populations.](https://www.oii.ox.ac.uk/news-events/the-supply-chain-of-ai-the-environmental-impact-of-ai-and-the-need-to-reconsider-algorithmic-harms/)
+      - h2: "Can AI still be part of the solution?"
+      - blockquote:
+          body: |
+            "AI can do in seconds what might take a team of experts a year. This is why we must harness it to reverse the damage we've done to the planet."
+          cite: "— Professor Anil Madhavapeddy (ai@cam)"
+      - markdown: |
+          Despite its costs, AI also holds real promise for sustainability:
+
+          - It's enhancing climate and weather forecasting while consuming less energy than traditional models.
+          - It helps monitor deforestation, ocean health, and natural disasters at a scale that would be unmanageable manually.
+          - While AI data centres will increase electricity demand and emissions, this increase will be relatively small within the overall energy sector and could potentially be offset by AI-enabled emissions reductions if widely adopted (IEA's Energy and AI Report 2025).
+          - AI is becoming increasingly integral to scientific discovery and could accelerate innovation specifically in energy technologies such as batteries and solar PV (IEA's Energy and AI Report 2025).
+          - AI hardware's 40% annual energy efficiency improvement offers a promising path to more sustainable computing (Stanford AI Index Report 2025).
+          - Universities and tech companies are also exploring greener practices — like reusing server heat, reducing water use, and developing more efficient algorithms.
+      - callout:
+          heading: "For behavioural researchers"
+          body: |
+            AI isn't just a digital tool — it's a physical, global system. If we want to use it responsibly, we need to treat sustainability as a core part of how AI is designed, deployed, and governed. Rather than refraining from using these tools, implement mindful practices like batching queries, or selecting appropriately-sized and more energy-efficient models for your needs.
+      - h2: "Further reading"
+      - markdown: |
+          - UNEP, [**AI has an environmental problem. Here's what the world can do about that**](https://www.unep.org/news-and-stories/story/ai-has-environmental-problem-heres-what-world-can-do-about)
+          - MIT, [**The Climate and Sustainability Implications of Generative AI**](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2)
+          - Yale School of the Environment, [**Can We Mitigate AI's Environmental Impacts?**](https://environment.yale.edu/news/article/can-we-mitigate-ais-environmental-impacts)
+          - Queen Mary University of London, [**Can AI and sustainability co-exist?**](https://www.qmul.ac.uk/media/news/2025/science-and-engineering/se/can-ai-and-sustainability-co-exist.html)
+          - Nature, [**Ecological footprints, carbon emissions, and energy transitions: the impact of artificial intelligence (AI)**](https://www.nature.com/articles/s41599-024-03520-5)
+          - Oxford Internet Institute, [**The Supply Chain of AI: the environmental impact of AI and the need to reconsider algorithmic harms**](https://www.oii.ox.ac.uk/news-events/the-supply-chain-of-ai-the-environmental-impact-of-ai-and-the-need-to-reconsider-algorithmic-harms/)
+          - IEA, [**AI is set to drive surging electricity demand from data centres while offering the potential to transform how the energy sector works**](https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works)
+
+pager:
+  prev: { ref: "section-2.privacy",         label: "Previous topic", title: "Privacy" }
+  next: { ref: "section-2.key-regulations", label: "Next topic",     title: "Key Regulations" }

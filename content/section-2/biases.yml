@@ -1,0 +1,51 @@
+# section-2/biases.html — Topic 2.
+
+title: "AI Biases | BR-UK"
+description: "How AI systems can amplify existing biases — with a real-world policing example and researcher responsibilities."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-2", label: "Section 2: Ethics &amp; Responsibility" }
+  - { label: "Biases" }
+
+badge: "Section 2 · Topic 2"
+heading: "Biases"
+
+body:
+  - prose:
+      - lede: |
+          AI systems hold great potential for supporting behavioural research and
+          improving real-world decision-making. But they also carry risks — particularly
+          the risk of amplifying existing human and systemic biases.
+      - markdown: |
+          Because AI learns patterns from data, it often reflects the real world's limitations, stereotypes, and inequalities. This can happen in many areas, such as healthcare, hiring, education and policing, leading to results that are not only wrong but also harmful.
+      - h2: "A real-world example: Bias in AI-assisted policing"
+      - markdown: |
+          AI is increasingly used in high-pressure jobs like policing, where officers must make quick decisions with limited information. While these tools aim to support judgement, research shows they can embed and reinforce bias in a feedback loop through the following:
+
+          1. Biased data
+          2. Biased judgements
+          3. Biased outcomes
+
+          Over time, this cycle of bias reinforces and amplifies the original bias, even when individuals are acting in good faith. Flawed data, tools, and human decision-making become entangled in a self-reinforcing loop.
+
+          See [How behavioral science interventions can disrupt the cycle of bias in AI-assisted police work](https://journals.sagepub.com/doi/full/10.1177/23794607241300788) (Dittmann, Dobson, &amp; Schweitzer, 2025).
+      - h2: "Special responsibilities for researchers"
+      - markdown: |
+          AI bias doesn't demand a complete rethinking of science, but it does come with **special responsibilities** for researchers using these tools:
+
+          - **Scrutinise your data** — understand where it came from and who it represents.
+          - **Disclose your methods** — make it easy for others to see how AI shaped your findings.
+          - **Verify outputs** — don't assume AI is correct; check it is.
+          - **Engage communities** — especially those who might be affected by your research.
+          - **Be accountable** — you, not the tool, are responsible for the research.
+
+          Ultimately, researchers must use their judgement and expertise not only to apply AI effectively but also to challenge and improve it to uphold the values of rigorous, ethical, and inclusive science.
+      - h2: "Further reading"
+      - markdown: |
+          - [Read more on emerging AI Bias and Error concerns in research](https://link.springer.com/article/10.1007/s43681-024-00493-8)
+          - [Read more about AI bias and errors](https://link.springer.com/article/10.1007/s43681-024-00493-8#Sec14)
+
+pager:
+  prev: { ref: "section-2.disclosure", label: "Previous topic", title: "Disclosure &amp; Transparency" }
+  next: { ref: "section-2.privacy",    label: "Next topic",     title: "Privacy" }

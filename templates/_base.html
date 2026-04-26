@@ -1,0 +1,75 @@
+{#- Base shell: <head>, header, footer, scripts. -#}
+{#- All pages extend this template and fill the {% block main %} placeholder. -#}
+{%- set head_extra = head_extra | default('') -%}
+{%- set body_class = body_class | default('') -%}
+{%- set footer_about = data.get('footer_about', site.footer.about) -%}
+{%- set footer_contact = data.get('footer_contact', site.footer.contact) -%}
+{#- Helper: produce a path relative to the current page -#}
+<!DOCTYPE html>
+<!-- GENERATED FILE — DO NOT EDIT. Source: content/{{ page.source.relative_to(content_dir).as_posix() }}. Run `python3 build.py` to regenerate. -->
+<html lang="{{ data.get('lang', site.defaults.lang) }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ data.title | safe_amp | safe }}</title>
+  <meta name="description" content="{{ data.description | e }}">
+
+  <link rel="icon" type="image/svg+xml" href="{{ prefix }}{{ site.favicon }}">
+  <link rel="stylesheet" href="{{ prefix }}{{ site.stylesheet }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="{{ site.fonts }}" rel="stylesheet">
+</head>
+<body{% if body_class %} class="{{ body_class }}"{% endif %}>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ link_for(site.brand.href_ref) }}">
+        <img class="brand__mark-img" src="{{ prefix }}{{ site.brand.logo }}" alt="{{ site.brand.logo_alt | e }}" aria-hidden="true" width="38" height="38">
+        <span class="brand__text">
+          <span class="brand__name">{{ site.brand.name | safe_amp | safe }}</span>
+          <span class="brand__tag">{{ site.brand.tag | safe_amp | safe }}</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle primary navigation menu">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+{%- for item in site.nav %}
+        <a href="{{ link_for(item.ref) }}"{% if item.match == section_id %} class="is-active"{% endif %}>{{ item.label | safe_amp | safe }}</a>
+{%- endfor %}
+      </nav>
+    </div>
+  </header>
+{% block main %}{% endblock %}
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <h4>{{ site.footer.about_heading | safe_amp | safe }}</h4>
+        <p>{{ footer_about | safe_amp | safe }}</p>
+      </div>
+      <div>
+        <h4>{{ site.footer.sections_heading | safe_amp | safe }}</h4>
+        <ul>
+{%- for s in site.footer.sections %}
+          <li><a href="{{ link_for(s.ref) }}">{{ s.label | safe_amp | safe }}</a></li>
+{%- endfor %}
+        </ul>
+      </div>
+      <div>
+        <h4>{{ site.footer.contact_heading | safe_amp | safe }}</h4>
+        <ul>
+{%- for c in footer_contact %}
+          <li><a href="{{ c.url }}">{{ c.label | safe_amp | safe }}</a></li>
+{%- endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>{{ site.footer.copyright | safe_amp | safe }}</span>
+      <span>{{ site.footer.status | safe_amp | safe }}</span>
+    </div>
+  </footer>
+
+  <script src="{{ prefix }}{{ site.script }}"></script>
+</body>
+</html>

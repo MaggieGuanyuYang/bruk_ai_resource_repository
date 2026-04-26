@@ -1,0 +1,62 @@
+# section-1/index.html — Section 1 overview ("Living Guide").
+
+title: "Section 1: Living Guide of AI in Behavioural Research | BR-UK"
+description: "Stage-by-stage guidance on using AI in literature review, hypothesis generation, data collection, analysis, and writing & reporting."
+
+breadcrumb:
+  - { ref: "home", label: "Home" }
+  - { label: "Section 1: Living Guide" }
+
+badge: "Section 1"
+heading: "Living Guide of AI in the Behavioural Research Process"
+
+body:
+  - prose:
+      - lede:
+          font_size: "1.12rem"
+          text: |
+            AI can assist in multiple stages of the research process, from literature reviews
+            to data analysis and report writing. Think of AI as another colleague, able to
+            help and assist (with some limitations) rather than a complete replacement. AI
+            has the ability to enhance the work we are doing, making daily tasks simpler and
+            less onerous, but there are some things to consider before starting a project.
+      - h2: "Jump to a stage of your research"
+      - markdown: |
+          Each sub-page covers a specific stage of the research lifecycle, with tools, real
+          examples, and key references.
+  - subpage_list:
+      - ref: "section-1.literature-review"
+        title: "Literature Review &amp; Background Research"
+        blurb: "Find relevant papers, summarise studies, identify gaps and map the landscape."
+      - ref: "section-1.hypothesis-generation"
+        title: "Hypothesis Generation &amp; Study Design"
+        blurb: "Refine research questions, generate hypotheses, and design surveys or interventions."
+      - ref: "section-1.data-collection"
+        title: "Data Collection &amp; Processing"
+        blurb: "Use chatbots, transcription tools, and synthetic data to collect and clean data."
+      - ref: "section-1.data-analysis"
+        title: "Data Analysis &amp; Interpretation"
+        blurb: "Analyse qualitative and quantitative data with AI-powered tools and LLMs."
+      - ref: "section-1.writing-reporting"
+        title: "Writing &amp; Reporting"
+        blurb: "Draft, edit, cite, and disseminate research with AI support — responsibly."
+  - callout:
+      heading: "A note on role"
+      body: |
+        Throughout this section we treat AI as a **supportive colleague**,
+        not a replacement. Keep core research skills sharp, verify AI outputs, and stay
+        aware of ethical and methodological limits — see
+        [Section 2](../section-2/index.html) for the ethics side of the story.
+  - references:
+      heading: "Selected references for this section"
+      items:
+        - "Heidt, M. (2025). *Nature*, 640(8058), 555–557."
+        - "Charness et al. (2025). *Nature Human Behaviour*."
+        - "Gibney, E. (2025). *Nature*."
+        - "Khalifa, M., &amp; Albadawy, M. (2024). *Computer Methods and Programs in Biomedicine Update*."
+        - "Messeri, L., &amp; Crockett, M. J. (2024). *Nature*, 627(8002), 49–58."
+        - "Abdurahman, S. et al. (2024). *PNAS Nexus*, 3(7)."
+
+pager:
+  prev: { ref: "home",                          label: "Back to",     title: "Home" }
+  next: { ref: "section-1.literature-review",   label: "Start with",  title: "Literature Review" }

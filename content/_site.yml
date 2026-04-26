@@ -1,0 +1,53 @@
+# Global site configuration: brand, navigation, footer, fonts.
+# Per-page YAML files override individual fields where needed (see home.yml).
+
+brand:
+  name: "AI Tools & Resources"
+  tag: "Behavioural Research UK"
+  logo: "assets/BR-UK_LogoIcon_White.svg"
+  logo_alt: ""
+  href: "index.html"          # the brand link target (resolved as a ref below)
+  href_ref: "home"
+
+stylesheet: "assets/css/style.css"
+favicon: "assets/favicon.svg"
+script: "assets/js/main.js"
+
+fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600&display=swap"
+
+# Primary navigation (header). `ref` resolves to a page id; `label` is the link text.
+# `match` controls when this link gets the `is-active` class — page ref or section prefix.
+nav:
+  # The Home link is never highlighted, even when on the home page — match is set
+  # to a sentinel that no page produces.
+  - { ref: "home",      label: "Home",                          match: "_never" }
+  - { ref: "section-1", label: "1. Living Guide",               match: "section-1" }
+  - { ref: "section-2", label: "2. Ethics & Responsibility",    match: "section-2" }
+  - { ref: "section-3", label: "3. Learning Resources",         match: "section-3" }
+  - { ref: "section-4", label: "4. Advice Sessions",            match: "section-4" }
+  - { ref: "about",     label: "BR-UK Statement",               match: "about" }
+
+# Footer block. The home page overrides `about` and `contact` with its own keys.
+footer:
+  about_heading: "About BR-UK"
+  about: |-
+    The Behavioural Research UK Leadership Hub is supported by the Economic and Social Research Council [Grant Number ES/Y001044/1].
+  sections_heading: "Sections"
+  sections:
+    - { ref: "section-1", label: "1. Living Guide" }
+    - { ref: "section-2", label: "2. Ethics & Responsibility" }
+    - { ref: "section-3", label: "3. Learning Resources" }
+    - { ref: "section-4", label: "4. Advice Sessions" }
+    - { ref: "about",     label: "BR-UK Statement" }
+    - { ref: "section-5", label: "5. Disclaimer & Contact" }
+  contact_heading: "Get in touch"
+  contact:
+    - { url: "https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58", label: "Contact form" }
+    - { url: "https://usher.ed.ac.uk/behavioural-research-uk/join-our-mailing-list", label: "Join our mailing list" }
+  copyright: "© Behavioural Research UK. Content licensed for research and educational use."
+  status: "A living repository · Last content review 2026"
+
+# Default page-level options. Individual pages can override these.
+defaults:
+  lang: "en"
+  container: "container container--narrow"   # most pages

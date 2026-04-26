@@ -1,0 +1,79 @@
+# section-1/data-collection.html — Stage 3.
+
+title: "Data Collection &amp; Processing | BR-UK AI"
+description: "AI tools for data collection and processing: chatbots (Qualtrics, Rasa), transcription (Vink, Otter), Julius AI, synthetic data generation."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-1", label: "Section 1: Living Guide" }
+  - { label: "Data Collection &amp; Processing" }
+
+badge: "Section 1 · Stage 3"
+heading: "Data Collection &amp; Processing"
+
+body:
+  - prose:
+      - lede: |
+          AI tools can streamline many stages of data collection and processing,
+          improving speed, efficiency, and in some cases, participant engagement. For
+          example, AI-powered chatbots can support data collection by guiding respondents
+          through surveys in an engaging, conversational format.
+      - markdown: |
+          That said, AI should be seen as a tool to support — not replace — human
+          researchers, especially when it comes to ensuring data quality and ethical
+          oversight.
+      - quicknav:
+          items:
+            - { href: "#help",            label: "What AI can help with" }
+            - { href: "#tools",           label: "Tools" }
+            - { href: "#chatbots-qual",   label: "Chatbots for qualitative data collection" }
+            - { href: "#interventions",   label: "Delivering interventions" }
+            - { href: "#synthetic",       label: "Synthetic data and populations" }
+      - h2: { id: "help", text: "What AI can help with" }
+      - markdown: |
+          - Collecting and processing both qualitative and quantitative data (e.g. using chatbots or AI transcription tools).
+          - Creating synthetic data or populations to study in isolation or supplement human datasets.
+              - Synthetic data is artificially generated to mimic the statistical properties of real data, without containing any identifiable information — helping to protect individuals' privacy.
+          - Delivering real-time behavioural interventions or guiding participants through them (e.g. via virtual coaches).
+          - Automating reminders and adapting interventions based on user responses.
+      - h2: { id: "tools", text: "Tools" }
+      - markdown: |
+          Common survey platforms, such as [Qualtrics](https://www.qualtrics.com/news/qualtrics-unveils-groundbreaking-ai-innovations-to-transform-understanding-of-customers-employees-and-prospects/) (paid), are now integrating AI features such as Conversational Feedback, which uses GPT-4 Turbo to generate follow-up questions based on respondents' initial answers. More flexible solutions include customisable chatbots built with platforms like [Rasa](https://rasa.com/) (free &amp; paid), which can be tailored for behavioural studies to simulate interviews or collect narrative data. Researchers have also started using LLMs in moderated or semi-structured conversational formats to guide participants through qualitative tasks, improving scalability and responsiveness while maintaining conversational depth.
+
+          [Vink](https://doi.org/10.1186/s13104-024-06842-4) is a free, open-source transcription tool that adapts OpenAI's Whisper speech-to-text model to support rigorous and efficient qualitative research. Designed to be accessible and privacy-conscious, Vink enables researchers to transcribe multilingual interview data on local machines without cost or internet dependency. For qualitative interview data, [Otter AI](https://otter.ai/) can help transcribe audio recordings to text. However, enhanced informed consent, secure data management, and human verification are highly recommended in academic research.
+
+          For data processing, [Julius AI Data Transformation](https://julius.ai/glossary/data-transformation) can produce a preliminary assessment report on your dataset that identifies errors and outliers before transformation. This validation process allows users to detect missing values and add relevant data points for the analysis. See also this [blog post on data transformation](https://community.julius.ai/t/guide-data-transformation-and-linear-regression/5012).
+
+          There are general-purpose synthetic data generation tools, such as [YData's SDK](https://docs.sdk.ydata.ai/latest/synthetic_data/), that use generative AI to create behavioural, tabular, and time-series data under specific conditions. More specialised tools also exist — for example, [Synthea](https://github.com/synthetichealth/synthea/wiki) is an open-source synthetic patient generator that simulates complete, realistic (but fictional) medical histories for public health research and intervention testing.
+      - h2: { id: "chatbots-qual", text: "Example: Chatbots for qualitative data collection" }
+      - markdown: |
+          Researchers developed an AI-powered chatbot to conduct open-ended surveys using Juji (juji.io), a platform where users can create customised chatbots. In partnership with a market research firm, they conducted a field study exploring players' perceptions of new video game trailers. The chatbot collected more informative and relevant responses than traditional online surveys, improving the overall quality of the data.
+      - blockquote:
+          body: |
+            Xiao, Z., Zhou, M. X., Liao, Q. V., Mark, G., Chi, C., Chen, W., &amp; Yang, H. (2020). Tell Me About Yourself: Using an AI-Powered Chatbot to Conduct Conversational Surveys with Open-ended Questions. *ACM Transactions on Computer-Human Interaction*, 27(3), 1–37. [https://doi.org/10.1145/3381804](https://doi.org/10.1145/3381804)
+      - markdown: |
+          However, other researchers compared the effectiveness of chatbots and traditional web surveys in longitudinal data collection on daily news consumption. The findings indicated that web surveys generally yielded higher data quality and more favourable user evaluation. While chatbots offer the potential for increased interactivity and engagement, the study cautioned that they do not necessarily enhance data quality.
+      - blockquote:
+          body: |
+            Zarouali, B., Araujo, T., Ohme, J., &amp; de Vreese, C. (2024). Comparing Chatbots and Online Surveys for (Longitudinal) Data Collection: An Investigation of Response Characteristics, Data Quality, and User Evaluation. *Communication Methods and Measures*, 18(1), 72–91. [https://doi.org/10.1080/19312458.2022.2156489](https://doi.org/10.1080/19312458.2022.2156489)
+      - h2: { id: "interventions", text: "Example: Delivering interventions" }
+      - markdown: |
+          Researchers conducted a systematic review to evaluate the feasibility and effectiveness of AI-based chatbots for promoting health behaviour change across a range of domains, such as smoking cessation. The review found that chatbots can deliver personalised, engaging, and scalable interventions, with several studies reporting positive outcomes on behaviour and user satisfaction. However, the evidence base remains limited by short follow-up durations, variability in chatbot design, and inconsistent reporting of outcomes. The authors conclude that while AI chatbots are a promising tool for health promotion, more rigorous and long-term evaluations are needed to establish their effectiveness and guide best practices.
+      - blockquote:
+          body: |
+            Aggarwal, A., Tam, C. C., Wu, D., Li, X., &amp; Qiao, S. (2023). Artificial Intelligence–Based Chatbots for Promoting Health Behavioral Changes: Systematic Review. *Journal of Medical Internet Research*, 25(1), e40789. [https://doi.org/10.2196/40789](https://doi.org/10.2196/40789)
+      - h2: { id: "synthetic", text: "Example: Synthetic data and populations" }
+      - markdown: |
+          Researchers developed an agentic AI architecture to simulate the attitudes and behaviours of over a thousand real individuals. By applying large language models to qualitative interviews, the generative agents replicated participants' responses on the General Social Survey with 85% accuracy. This approach demonstrates the potential of AI-driven agents to emulate human behaviour in social science research, offering a scalable method for studying individual and collective behaviours.
+      - blockquote:
+          body: |
+            Park, J. S., Zou, C. Q., Shaw, A., Hill, B. M., Cai, C., Morris, M. R., Willer, R., Liang, P., &amp; Bernstein, M. S. (2024). Generative Agent Simulations of 1,000 People. *arXiv:2411.10109*. [https://doi.org/10.48550/arXiv.2411.10109](https://doi.org/10.48550/arXiv.2411.10109)
+      - markdown: |
+          However, while agentic AI provides opportunities, it also has risks. Researchers of a recent paper on potential harms arising from increasingly agentic AI systems argue that as machine learning systems gain more autonomy, they can introduce new forms of harm, particularly affecting marginalised communities. They emphasise the importance of proactively anticipating these harms rather than merely responding to them after deployment. The paper concludes that recognising the agency of algorithmic systems does not absolve human responsibility but highlights the need for robust governance to mitigate systemic and long-term impacts.
+      - blockquote:
+          body: |
+            Chan, A., Salganik, R., Markelius, A., Pang, C., Rajkumar, N., Krasheninnikov, D., Langosco, L., He, Z., Duan, Y., Carroll, M., Lin, M., Mayhew, A., Collins, K., Molamohammadi, M., Burden, J., Zhao, W., Rismani, S., Voudouris, K., Bhatt, U., … Maharaj, T. (2023). Harms from Increasingly Agentic Algorithmic Systems. *Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency*, 651–666. [https://doi.org/10.1145/3593013.3594033](https://doi.org/10.1145/3593013.3594033)
+
+pager:
+  prev: { ref: "section-1.hypothesis-generation", label: "Previous stage", title: "Hypothesis Generation &amp; Study Design" }
+  next: { ref: "section-1.data-analysis",         label: "Next stage",     title: "Data Analysis &amp; Interpretation" }

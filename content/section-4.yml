@@ -1,0 +1,40 @@
+# section-4.html — BR-UK AI Advice Sessions.
+
+title: "Section 4: BR-UK AI Advice Sessions | BR-UK"
+description: "Catch up on BR-UK's three online AI advice sessions for behavioural researchers — with Janna Hastings, Susan Michie, Amy Rodger, Maggie Guanyu Yang, and Robert West."
+
+breadcrumb:
+  - { ref: "home", label: "Home" }
+  - { label: "Section 4: BR-UK AI Advice Sessions" }
+
+badge: "Section 4"
+heading: "BR-UK AI Advice Sessions"
+
+body:
+  - prose:
+      - lede:
+          font_size: "1.12rem"
+          text: |
+            Catch up on our online advice sessions supporting researchers navigating this
+            fast-evolving space.
+      - markdown: |
+          BR-UK hosted three advice sessions which allowed those with specific questions or advice requests to connect with [Dr Janna Hastings](https://www.ifis.uzh.ch/en/Über-uns/Medical-Knowledge-and-Decision-Support/Hastings-Janna.html), [Professor Susan Michie](https://profiles.ucl.ac.uk/7824), [Dr Amy Rodger](https://edwebprofiles.ed.ac.uk/profile/amy-rodger), [Dr Maggie Guanyu Yang](https://profiles.ucl.ac.uk/79042), and [Professor Robert West](https://profiles.ucl.ac.uk/10502) to discuss these.
+
+          These sessions were aimed at those who had watched our [previous AI webinars](https://usher.ed.ac.uk/behavioural-research-uk/webinars-events/watch-again) and had a specific question to ask our panel or were looking for some advice.
+
+          Recordings of these sessions are available to watch by clicking the links below. The videos are hosted on the University of Edinburgh's media platform and therefore do not contain adverts.
+      - h2: "Recordings"
+      - subpage_list:
+          style: "grid-template-columns: 1fr"
+          items:
+            - { href: "https://media.ed.ac.uk/media/BR-UK+AI+Help+Desk+Session+1/1_fplyn9zp",                  title: "September 2025 — BR-UK AI Advice Session 1", blurb: "Watch the first of three sessions" }
+            - { href: "https://media.ed.ac.uk/media/AI+Advice+Session+November+2025/1_qkmffer5/370463662",     title: "November 2025 — BR-UK AI Advice Session 2",  blurb: "Watch the second of three sessions" }
+            - { href: "https://media.ed.ac.uk/media/AI+Advice+Session+January+2026/1_1bisfoyb/370463662",      title: "January 2026 — BR-UK AI Advice Session 3",   blurb: "Watch the third of three sessions" }
+      - callout:
+          heading: "Have a question for future sessions?"
+          body: |
+            Use our [contact form](https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58) or email Dr Amy Rodger or Dr Maggie Guanyu Yang — see [Section 5](section-5.html).
+
+pager:
+  prev: { ref: "section-3", label: "Previous section", title: "3. Learning Resources" }
+  next: { ref: "section-5", label: "Next section",     title: "5. Disclaimer & Contact" }

@@ -1,0 +1,79 @@
+# section-3.html — General AI Learning Resources.
+
+title: "Section 3: General AI Learning | BR-UK"
+description: "A curated set of AI learning resources for behavioural researchers — webinars, online courses, YouTube channels, and advanced deep-learning programmes."
+
+breadcrumb:
+  - { ref: "home", label: "Home" }
+  - { label: "Section 3: General AI Learning" }
+
+badge: "Section 3"
+heading: "General AI Learning"
+
+body:
+  - prose:
+      - lede:
+          font_size: "1.12rem"
+          text: |
+            A curated set of learning resources, including webinars, courses, and videos —
+            from beginner-friendly primers to advanced deep-learning programmes. Use these
+            to build intuition about how AI works before applying it in your own research.
+      - quicknav:
+          items:
+            - { href: "#bruk-webinars", label: "BR-UK AI Webinars" }
+            - { href: "#online-courses", label: "Online courses" }
+            - { href: "#youtube",        label: "YouTube channels" }
+            - { href: "#advanced",       label: "Advanced learning" }
+      - h2: { id: "bruk-webinars", text: "BR-UK AI Webinars" }
+      - markdown: |
+          BR-UK has conducted three webinars on AI in behavioural research — available on demand via [our webinars & events page](https://usher.ed.ac.uk/behavioural-research-uk/webinars-events/upcoming-webinars):
+
+          - [Using Artificial Intelligence to improve Behavioural Research](https://media.ed.ac.uk/media/BR-UK+%3A+Using+AI+to+Improve+Behavioural+Research/1_qv7xyowy/370463662)
+          - [Using Analytic AI to improve Behavioural Research](https://media.ed.ac.uk/media/Behavioural+Research+UK%3A+Using+Analytic+AI+to+improve+Behavioural+Research/1_jntcg6ha)
+          - [Responsible use of AI in behavioural research](https://media.ed.ac.uk/media/Responsible+use+of+AI+in+behavioural+research/1_1t0mu0vb)
+      - h2: { id: "online-courses", text: "Online courses" }
+      - tool_grid:
+          - name: "Elements of AI"
+            url: "https://www.elementsofai.com/"
+            desc: "Offered by the University of Helsinki and MinnaLearn, this course aims to demystify AI through theoretical and practical exercises."
+          - name: "AI for Beginners"
+            url: "https://microsoft.github.io/AI-For-Beginners/"
+            desc: "Developed by Microsoft, this 12-week, 24-lesson curriculum provides an introduction to AI."
+          - name: "Google Cloud ML & AI Courses"
+            url: "https://cloud.google.com/learn/training/machinelearning-ai?utm_source=chatgpt.com#generative-ai-courses-by-level"
+            desc: "Google offers a range of courses covering machine learning and AI fundamentals for every skill level."
+          - name: "Khan Academy — AI for Education"
+            url: "https://www.khanacademy.org/college-careers-more/ai-for-education"
+            desc: "Offers a 3-unit course on generative AI addressing topics like what it is and best practices for teaching and learning."
+          - name: "IBM SkillsBuild — AI"
+            url: "https://skillsbuild.org/adult-learners/explore-learning/artificial-intelligence"
+            desc: "IBM SkillsBuild offers a series of online lectures introducing artificial intelligence, generative AI, and AI ethics."
+      - h2: { id: "youtube", text: "YouTube channels" }
+      - tool_grid:
+          - name: "Andy Stapleton"
+            url: "https://www.youtube.com/@DrAndyStapleton"
+            desc: "A YouTube channel designed to assist academics, particularly PhD students and early-career researchers, in navigating the complexities of academia and integrating AI into their workflows."
+          - name: "WiseUp Communications"
+            url: "https://www.youtube.com/@WiseUpCommunications"
+            desc: "Offers practical guidance on research writing, presentations, and some videos on leveraging AI tools for academic purposes."
+          - name: "Prof. David Stuckler"
+            url: "https://www.youtube.com/@profdavidstuckler"
+            desc: "Discusses the use of AI in academic research processes, focusing on maintaining academic integrity while leveraging AI."
+          - name: "Dr. Philip Adu"
+            url: "https://www.youtube.com/@drphilipadu/videos"
+            desc: "Focuses on using AI tools to empower qualitative and quantitative research methods."
+      - h2: { id: "advanced", text: "Advanced learning resources" }
+      - tool_grid:
+          - name: "Harvard CS50's Introduction to AI with Python"
+            url: "https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python"
+            desc: "Self-paced 7-week online course on edX offered by Harvard University, covering graph-search algorithms, reinforcement learning, AI principles, how to design intelligent systems, and how to use AI in Python programmes."
+          - name: "Practical Deep Learning for Coders"
+            url: "https://course.fast.ai/"
+            desc: "Fast.ai offers a course designed to make deep learning accessible for those with some coding experience."
+          - name: "Cooperative AI Interactive Course"
+            url: "https://bluedot.org/courses/cooperative-ai"
+            desc: "This course from BlueDot Impact introduces an emerging research field focused on improving AI's cooperative intelligence for the benefit of all."
+
+pager:
+  prev: { ref: "section-2.key-regulations", label: "Previous section", title: "2.5 Key Regulations" }
+  next: { ref: "section-4",                 label: "Next section",     title: "4. BR-UK AI Advice Sessions" }

@@ -1,0 +1,114 @@
+# section-1/hypothesis-generation.html — Stage 2.
+
+title: "Hypothesis Generation &amp; Study Design | BR-UK AI"
+description: "AI tools for hypothesis generation and study design: LLMs, CoQuest, HyperWrite, examples from psychology and health research."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-1", label: "Section 1: Living Guide" }
+  - { label: "Hypothesis Generation &amp; Study Design" }
+
+badge: "Section 1 · Stage 2"
+heading: "Hypothesis Generation &amp; Study Design"
+
+body:
+  - prose:
+      - lede: |
+          Generating research questions is a core part of behavioural science, but it's
+          not easy. Researchers often spend months narrowing down a testable idea, as this
+          process relies on reading and assessing large volumes of prior work. With
+          thousands of new studies published each year, it's becoming harder to keep up —
+          and easier to miss important gaps in the literature.
+      - markdown: |
+          AI tools can help by scanning and synthesising large bodies of research to
+          suggest new hypotheses, highlight underexplored areas, and turn vague ideas into
+          testable questions. Some tools can also recommend appropriate methods or
+          generate draft materials such as surveys, interview guides, and behavioural
+          interventions.
+      - quicknav:
+          items:
+            - { href: "#help",                  label: "What AI can help with" }
+            - { href: "#tools",                 label: "Tools" }
+            - { href: "#refining",              label: "Refining questions &amp; hypotheses" }
+            - { href: "#designing",             label: "Designing surveys &amp; interviews" }
+            - { href: "#methods",               label: "Suggesting research methods" }
+            - { href: "#intervention-content",  label: "Tailored intervention content" }
+            - { href: "#past-data",             label: "Analysing past intervention data" }
+            - { href: "#further",               label: "Other key readings" }
+      - h2: { id: "help", text: "What AI can help with" }
+      - markdown: |
+          - Analysing existing literature or large datasets and suggesting hypotheses.
+          - Brainstorming more general ideas. See [LSE's guide to using LLMs for brainstorming](https://www.lse.ac.uk/DSI/AI/AI-Research/Brainstorming).
+          - Designing research materials, such as surveys, stimuli, and interview guides.
+          - Refining vague or complex research questions and hypotheses into clear, precise, and testable formats — making them more specific, operationalisable, and easier to assess.
+          - Suggesting methods it would expect you to be using based on your research question.
+          - Generating tailored intervention content (e.g. personalised health messages, therapy scripts, or learning modules).
+          - Analysing past intervention data to refine strategies.
+      - h2: { id: "tools", text: "Tools" }
+      - markdown: |
+          Many of the examples below use large language models (LLMs) like ChatGPT, Claude, or Copilot, often adapted by researchers for specific study tasks. However, there are also standalone tools designed to support early research stages like hypothesis generation and study design. These include:
+      - tool_grid:
+          - { url: "https://www.hyperwriteai.com/aitools/hypothesis-maker", name: "HyperWrite's Hypothesis Makers", desc: "Generates hypotheses based on your research question. Free trial and paid versions available." }
+          - { name: "CoQuest", desc: "An AI-powered tool designed to generate research questions, particularly useful in early study planning. See the [GitHub project](https://github.com/yiren-liu/coquest/blob/main/README.md) and the [arXiv paper](https://arxiv.org/abs/2310.06155)." }
+      - markdown: |
+          A recent study evaluated six AI tools — ChatGPT-4o, ChatGPT-4, ChatGPT-3.5, Perplexity AI, SCI Space, and Julius AI — for identifying research gaps in the educational management literature. Results varied: while some tools returned accurate, useful references, others generated fabricated sources. [Read the full study](https://bpasjournals.com/library-science/index.php/journal/article/view/632).
+      - blockquote:
+          body: |
+            Soriano, S., Obrero, M. M., Rabago, J. B., Pacaldo-Pabalan, A., &amp; Angulo, R. R. D. G. and L. R. (2024). Evaluating the Accuracy of selected AI Tools in Identifying Methodological and Theoretical Gaps in Research Literature. *Library Progress International*, 44(3), Article 3.
+      - h2: { id: "refining", text: "Example: Refining research questions and suggesting hypotheses" }
+      - markdown: |
+          Researchers developed an open-source machine learning model to identify novel predictors of unethical behaviour — such as hoarding and violating social-distancing guidelines — during the COVID-19 pandemic. Analysing responses to over 700 items from the World Values Survey, the model highlighted optimism about humanity's future as a key predictor. The researchers then designed an experiment showing that framing messages about the pandemic in an optimistic (vs. pessimistic) way influenced how people justified unethical behaviours, with optimism reducing justification.
+      - blockquote:
+          body: |
+            Sheetal, A., Feng, Z., &amp; Savani, K. (2020). Using Machine Learning to Generate Novel Hypotheses: Increasing Optimism About COVID-19 Makes People Less Willing to Justify Unethical Behaviors. *Psychological Science*, 31(10), 1222–1235. [https://doi.org/10.1177/0956797620959594](https://doi.org/10.1177/0956797620959594)
+      - markdown: |
+          A recent study showed how AI can support hypothesis generation by combining a large language model (GPT-4) with causal graphs — maps of cause-and-effect relationships in research. Analysing over 43,000 psychology papers, the researchers used this method to generate 130 new hypotheses about well-being. The combined AI approach produced ideas as original as those from PhD students and stronger than those from the LLM alone, showing how AI can help researchers spot promising directions in large bodies of literature.
+      - blockquote:
+          body: |
+            Tong, S., Mao, K., Huang, Z., Zhao, Y., &amp; Peng, K. (2024). Automating psychological hypothesis generation with AI: When large language models meet causal graph. *Humanities and Social Sciences Communications*, 11(1), 1–14. [https://doi.org/10.1057/s41599-024-03407-5](https://doi.org/10.1057/s41599-024-03407-5)
+      - h2: { id: "designing", text: "Example: Designing surveys, questionnaires, and interview guides" }
+      - markdown: |
+          At BR-UK, one of our projects exploring how public support for policies shifts in response to different types of evidence — statistical, anecdotal, and combinations of the two — used ChatGPT to help generate the various evidence stimuli needed across the study. You can read more about the study and access the protocol outlining how ChatGPT was used to create the stimuli [here](https://doi.org/10.31219/osf.io/e2kxc_v1).
+      - blockquote:
+          body: |
+            Rodger, A., Sanna, G. A., Cheung, V., Raihani, N., &amp; Lagnado, D. (2025). Negative Anecdotes Reduce Policy Support: Evidence from Three Experimental Studies on Communicating Policy (In)Effectiveness. *OSF*. [https://doi.org/10.31219/osf.io/e2kxc_v1](https://doi.org/10.31219/osf.io/e2kxc_v1)
+      - markdown: |
+          Also see this great overview blog on [The Promise &amp; Pitfalls of AI-Augmented Survey Research](https://www.norc.org/research/library/promise-pitfalls-ai-augmented-survey-research.html?utm_source=chatgpt.com).
+      - h2: { id: "methods", text: "Example: Suggesting appropriate research methods" }
+      - markdown: |
+          Researchers are exploring how generative AI can support better experimental design by helping identify mediators (why something works), moderators (for whom it works), and alternative treatment arms. A recent paper suggests that tools like LLMs can help researchers brainstorm these elements, simulate synthetic participants to test different ideas, and assess whether a study is likely to scale to other settings. This approach can make it easier to design studies that are more comprehensive and policy-relevant from the start. However, researchers still need to critically assess which AI-generated ideas are useful and which are not.
+      - blockquote:
+          body: |
+            Chang, S., Kennedy, A., Leonard, A., &amp; List, J. A. (2024). 12 Best Practices for Leveraging Generative AI in Experimental Research (Working Paper 33025). National Bureau of Economic Research. [https://doi.org/10.3386/w33025](https://doi.org/10.3386/w33025)
+      - h2: { id: "intervention-content", text: "Example: Generating tailored intervention content" }
+      - markdown: |
+          Researchers leveraged GPT-3.5 to create 1,150 SMS messages aimed at improving medication adherence among individuals with type 2 diabetes. The messages adhered to behaviour change techniques and met standards for readability and tone.
+      - blockquote:
+          body: |
+            Harrison, R. M., Lapteva, E., &amp; Bibin, A. (2024). Behavioral Nudging With Generative AI for Content Development in SMS Health Care Interventions: Case Study. *JMIR AI*, 3(1), e52974. [https://doi.org/10.2196/52974](https://doi.org/10.2196/52974)
+      - markdown: |
+          Researchers developed "MindShift," an AI-powered tool that generates personalised persuasive messages to reduce problematic smartphone use. Considering users' mental states and contexts, the intervention led to significant reductions in smartphone usage and improvements in self-efficacy over a five-week period.
+      - blockquote:
+          body: |
+            Wu, R., Yu, C., Pan, X., Liu, Y., Zhang, N., Fu, Y., Wang, Y., Zheng, Z., Chen, L., Jiang, Q., Xu, X., &amp; Shi, Y. (2024). MindShift: Leveraging Large Language Models for Mental-States-Based Problematic Smartphone Use Intervention. *Proceedings of the CHI Conference on Human Factors in Computing Systems*, 1–24. [https://doi.org/10.1145/3613904.3642790](https://doi.org/10.1145/3613904.3642790)
+      - markdown: |
+          [Mass General Brigham piloted using LLMs to help physicians respond to patient messages](https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/pitfalls-and-opportunities-for-generative-ai-in-patient-messaging-systems), finding that a significant percentage of AI-generated responses were safe to send and required no further editing.
+      - blockquote:
+          body: |
+            Chen, S., Guevara, M., Moningi, S., Hoebers, F., Elhalawani, H., Kann, B. H., Chipidza, F. E., Leeman, J., Aerts, H. J. W. L., Miller, T., Savova, G. K., Gallifant, J., Celi, L. A., Mak, R. H., Lustberg, M., Afshar, M., &amp; Bitterman, D. S. (2024). The effect of using a large language model to respond to patient messages. *The Lancet Digital Health*, 6(6), e379–e381. [https://doi.org/10.1016/S2589-7500(24)00060-8](https://doi.org/10.1016/S2589-7500(24)00060-8)
+      - h2: { id: "past-data", text: "Example: Analyse past intervention data to refine strategies" }
+      - markdown: |
+          Agentic AI is being applied to personalised health coaching, where AI systems adapt to users' needs based on their feedback. For instance, one AI agent identifies barriers to healthy behaviours through motivational interviewing, while another provides tailored strategies using behavioural science models like COM-B. This approach reduces reliance on human coaches, improving accessibility and scalability of wellness programs. However, ensuring data privacy and protecting against unintended harms remain key challenges for responsible implementation.
+      - blockquote:
+          body: |
+            Yang, E., Garcia, T., Williams, H., Kumar, B., Ramé, M., Rivera, E., Ma, Y., Amar, J., Catalani, C., &amp; Jia, Y. (2024). From Barriers to Tactics: A Behavioral Science-Informed Agentic Workflow for Personalized Nutrition Coaching. *arXiv:2410.14041*. [https://doi.org/10.48550/arXiv.2410.14041](https://doi.org/10.48550/arXiv.2410.14041)
+      - markdown: |
+          To learn more about Agentic AI read LSE's [blog](https://blogs.lse.ac.uk/businessreview/2025/03/04/how-agentic-ai-can-be-applied-to-behavioural-science/) on its application in behavioural science.
+      - h2: { id: "further", text: "Other key readings that informed this page" }
+      - markdown: |
+          - Banker, S., Chatterjee, P., Mishra, H., &amp; Mishra, A. (2024). Machine-assisted social psychology hypothesis generation. *American Psychologist*, 79(6), 789–797. [https://doi.org/10.1037/amp0001222](https://doi.org/10.1037/amp0001222)
+          - Wei, J., Kim, S., Jung, H., &amp; Kim, Y.-H. (2024). Leveraging Large Language Models to Power Chatbots for Collecting User Self-Reported Data. *Proc. ACM Hum.-Comput. Interact.*, 8(CSCW1), 87:1–87:35. [https://doi.org/10.1145/3637364](https://doi.org/10.1145/3637364)
+
+pager:
+  prev: { ref: "section-1.literature-review", label: "Previous stage", title: "Literature Review &amp; Background Research" }
+  next: { ref: "section-1.data-collection",   label: "Next stage",     title: "Data Collection &amp; Processing" }

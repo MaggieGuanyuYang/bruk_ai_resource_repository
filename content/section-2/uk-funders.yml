@@ -1,0 +1,62 @@
+# section-2/uk-funders.html — Topic 1b (nested under Disclosure).
+
+title: "What UK Funders Said About AI Use | BR-UK"
+description: "Joint funder statement and individual policies on AI in funding applications — UKRI, Wellcome, Leverhulme, British Academy, Royal Society, and more."
+
+breadcrumb:
+  - { ref: "home",                label: "Home" }
+  - { ref: "section-2",           label: "Section 2: Ethics &amp; Responsibility" }
+  - { ref: "section-2.disclosure", label: "Disclosure &amp; Transparency" }
+  - { label: "What UK funders said about AI use" }
+
+badge: "Section 2 · Topic 1b"
+heading: "What UK funders said about AI use"
+
+body:
+  - prose:
+      - lede:
+          font_size: "1.08rem"
+          text: |
+            Learn about the opinions on AI use from a range of UK funders — including the
+            joint statement from the Research Funders Policy Group, and pointers to the
+            individual policies of the major UK funding bodies.
+      - h2: "Joint funder statement: use of generative AI tools in funding applications and assessment"
+      - markdown: |
+          On behalf of our Research Funders Policy Group, we recognise Generative Artificial Intelligence (AI) tools, such as ChatGPT or Bard, present opportunities and bring benefits in the context of research such as supporting content generation for computer code or assisting neurodivergent researchers or reducing potential language barriers.
+
+          However, the use of Generative AI tools in the funding application and assessment process also presents potential risks for research in areas such as rigour, transparency, originality, reliability, data protection, confidentiality, intellectual property, copyright, and bias. We want to protect against potential ethical, legal and integrity issues in the use of generative AI tools to maintain the high standards of the research and innovation we fund.
+
+          When developing funding proposals, researchers must ensure generative AI tools are used responsibly and in accordance with relevant legal and ethical standards where these exist or as they develop. As best practice, any outputs from generative AI tools in funding applications should be acknowledged. Where individual funders wish to apply further specific restrictions, this will be explicitly stated.
+
+          Maintaining confidentiality is essential for safeguarding the exchange of scientific opinions and assessments. As such, our peer reviewers must not input content from our confidential funding applications or reviews into, or use, generative AI tools to develop their peer review critiques or applicant responses to critiques. Our peer reviewers are selected for their expertise and experience in their field and we value their unique perspectives.
+
+          We're taking this proactive and collective approach to set our high-level expectations whilst we develop our own, detailed individual funding policies. Generative AI tools will continue to grow and bring new considerations — both exciting and challenging. We'll work together to evaluate the effectiveness of this approach, monitor developments, and minimise bureaucracy.
+
+          *Statement published: 19 September 2023*
+      - h2: "Links to funders"
+      - markdown: |
+          [UKRI](https://www.ukri.org/publications/generative-artificial-intelligence-in-application-and-assessment-policy/use-of-generative-artificial-intelligence-in-application-preparation-and-assessment/) ·
+          [The Research Funders Policy Group made a joint statement](https://wellcome.org/grant-funding/guidance/policies-grant-conditions/use-of-generative-ai)
+      - h3: "Current members of the Research Funders Policy Group"
+      - markdown: |
+          - Association of Medical Research Charities (AMRC)
+          - British Heart Foundation (BHF)
+          - Cancer Research UK (CRUK)
+          - National Institute for Health and Care Research (NIHR)
+          - Royal Academy of Engineering
+          - Royal Society
+          - UK Research and Innovation (UKRI)
+      - h2: "Other major funding charities"
+      - markdown: |
+          - [The Wellcome Trust](https://wellcome.org/grant-funding/guidance/policies-grant-conditions/use-of-generative-ai)
+          - [The Leverhulme Trust](https://www.leverhulme.ac.uk/)
+      - h2: "The National Academies"
+      - markdown: |
+          - [Royal Society](https://royalsociety.org/grants-schemes-awards/)
+          - [British Academy](https://www.thebritishacademy.ac.uk/funding/?order=-last_published_at)
+          - [Royal Academy of Engineering](https://raeng.org.uk/programmes-and-prizes/programmes)
+          - [Academy of Medical Sciences](https://acmedsci.ac.uk/grants-and-schemes)
+
+pager:
+  prev: { ref: "section-2.publishers", label: "Related",    title: "What publishers said about AI use" }
+  next: { ref: "section-2.biases",     label: "Next topic", title: "Biases" }

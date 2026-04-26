@@ -1,0 +1,218 @@
+# section-2/publishers.html — Topic 1a (nested under Disclosure).
+
+title: "What Publishers Said About AI Use | BR-UK"
+description: "AI disclosure policies for Nature, Elsevier, Taylor & Francis, SAGE, Wiley, APA, Frontiers, Cambridge, PNAS, MDPI, Cell Press."
+
+breadcrumb:
+  - { ref: "home",                label: "Home" }
+  - { ref: "section-2",           label: "Section 2: Ethics &amp; Responsibility" }
+  - { ref: "section-2.disclosure", label: "Disclosure &amp; Transparency" }
+  - { label: "What publishers said about AI use" }
+
+badge: "Section 2 · Topic 1a"
+heading: "What publishers said about AI use"
+
+body:
+  - prose:
+      - lede:
+          font_size: "1.08rem"
+          text: |
+            Summaries of what major academic publishers currently require when authors,
+            editors, or reviewers use AI. Always check the publisher's most current policy
+            before submission. Last updated: 16 April 2025.
+      - quicknav:
+          items:
+            - { href: "#nature",    label: "Nature Portfolio / Springer Nature" }
+            - { href: "#elsevier",  label: "Elsevier" }
+            - { href: "#tf",        label: "Taylor &amp; Francis" }
+            - { href: "#sage",      label: "SAGE" }
+            - { href: "#wiley",     label: "Wiley" }
+            - { href: "#apa",       label: "APA Publications" }
+            - { href: "#frontiers", label: "Frontiers" }
+            - { href: "#cambridge", label: "Cambridge University Press" }
+            - { href: "#pnas",      label: "PNAS" }
+            - { href: "#mdpi",      label: "MDPI" }
+            - { href: "#cell",      label: "Cell Press" }
+      - h2: { id: "nature", text: "Nature Portfolio / Springer Nature" }
+      - markdown: |
+          [Official policy](https://www.nature.com/nature-portfolio/editorial-policies/ai)
+      - h3: "AI authorship"
+      - markdown: |
+          - LLMs don't meet authorship criteria; cannot be attributed as authors.
+          - Must document LLM use in Methods section.
+          - "AI-assisted copy editing" (grammar/style improvements) doesn't require disclosure.
+          - Human accountability required for final text.
+      - h3: "Generative AI images"
+      - markdown: |
+          - Strictly prohibits generative AI images in publications.
+          - Exceptions: licensed agency images, AI-specific research pieces, verified scientific tools.
+          - All exceptions must be labelled as AI-generated.
+      - h3: "AI use by peer reviewers"
+      - markdown: |
+          - Peer reviewers shouldn't upload manuscripts into generative AI tools.
+          - If AI supported evaluation, must declare transparently in review report.
+      - h3: "Editorial use"
+      - markdown: |
+          - Springer Nature uses internal AI tools for accessory content (summaries, glossaries).
+          - All content edited and fact-checked by humans.
+      - h2: { id: "elsevier", text: "Elsevier" }
+      - markdown: |
+          [Official policy](https://www.elsevier.com/en-gb/about/policies-and-standards/generative-ai-policies-for-journals)
+      - h3: "Writing process"
+      - markdown: |
+          - AI acceptable only for readability/language improvement.
+          - Requires human oversight and careful review.
+          - Authors must disclose AI use in manuscript.
+          - Authors remain fully accountable.
+      - h3: "Figures, images, artwork"
+      - markdown: |
+          - Prohibits generative AI for creating/altering images.
+          - Exception: AI as part of research methodology (must describe in Methods).
+          - No generative AI for graphical abstracts.
+      - h2: { id: "tf", text: "Taylor &amp; Francis" }
+      - markdown: |
+          [Official policy](https://taylorandfrancis.com/our-policies/ai-policy/?_ga=2.215521495.1735917277.1744196358-1377532618.1744196358)
+      - h3: "For authors"
+      - markdown: |
+          Supports responsible AI use for idea generation, language improvement, interactive search, literature classification, and coding assistance.
+
+          **Prohibitions:**
+
+          - Cannot list AI as author.
+          - Cannot replace core researcher responsibilities.
+          - No synthetic data generation without robust methodology.
+          - No generative AI for images/figures.
+
+          **Disclosure:** Must acknowledge AI tool name, version, usage method, and reason. Statement in Methods or Acknowledgments section.
+      - h3: "For editors &amp; peer reviewers"
+      - markdown: |
+          - Must not upload unpublished manuscripts into generative AI tools.
+          - Protects confidentiality and intellectual property.
+      - h2: { id: "sage", text: "SAGE" }
+      - markdown: |
+          [Official policy](https://www.sagepub.com/about/policies)
+      - h3: "Tool types"
+      - markdown: |
+          - **Assistive AI:** Makes suggestions to author-created content (no disclosure required).
+          - **Generative AI:** Produces original content (disclosure mandatory).
+      - h3: "Disclosure"
+      - markdown: |
+          - Must reveal all AI-generated content.
+          - Detail where content appears.
+          - Provide disclosure template with submission.
+      - h3: "Key considerations"
+      - markdown: |
+          - Verify accuracy of AI-generated content.
+          - Check sources and citations carefully.
+          - Appropriate citation of AI-generated material required.
+          - Avoid plagiarism and copyright infringement.
+          - Be aware of bias in AI outputs.
+      - h3: "Prohibited uses"
+      - markdown: |
+          - Don't create/modify core research data with AI.
+          - Never share sensitive information on AI platforms.
+          - Editors/reviewers must maintain peer review confidentiality.
+      - h2: { id: "wiley", text: "Wiley" }
+      - markdown: |
+          [Official policy](https://authorservices.wiley.com/ethics-guidelines/index.html)
+      - h3: "General guidance"
+      - markdown: |
+          - Welcomes thoughtful AI use.
+          - Authors remain fully accountable.
+          - Must review AI tool terms and conditions.
+          - Human oversight essential; AI cannot replace writing process.
+      - h3: "Disclosure"
+      - markdown: |
+          - Document all AI technology use (purpose, impact, review process).
+          - Disclose upon submission.
+          - Maintain documentation.
+      - h3: "Peer review"
+      - markdown: |
+          - GenAI can improve written feedback only.
+          - Must transparently declare this use.
+          - Editors/reviewers must not upload manuscript portions into AI tools.
+      - h2: { id: "apa", text: "APA Publications" }
+      - markdown: |
+          [Official policy](https://www.apa.org/pubs/journals/resources/publishing-tips/policy-generative-ai)
+
+          - Disclose AI use in Methods section.
+          - Cite the AI tool used.
+          - Cannot name AI as author.
+          - Authors must verify accuracy of all information and citations.
+          - Must upload full AI output as supplemental material.
+
+          *Privacy note:* Data entered into generative AI is accessible to the operating organisation. Authors should consider participant privacy implications.
+      - h2: { id: "frontiers", text: "Frontiers" }
+      - markdown: |
+          [Official policy](https://www.frontiersin.org/guidelines/policies-and-publication-ethics)
+      - h3: "AI-generated text"
+      - markdown: |
+          - Must disclose in Acknowledgments if used to generate main text.
+          - Authors responsible for factual accuracy.
+          - Cannot list AI as co-author.
+      - h3: "Figures and images"
+      - markdown: |
+          - Must verify accuracy and reflect data correctly.
+          - Check for plagiarism.
+          - Acknowledge in Acknowledgments and Methods sections.
+          - List tool name, version, model, and source.
+          - Encouraged to upload all prompts/outputs as supplementary files.
+      - h3: "Editors and reviewers"
+      - markdown: |
+          - Must not use generative AI to review manuscript content.
+          - Responsibility for integrity must remain with human experts.
+      - h2: { id: "cambridge", text: "Cambridge University Press" }
+      - markdown: |
+          [Official policy](https://www.cambridge.org/core/services/publishing-ethics/authorship-and-contributorship-journals#ai-contributions-to-research-content)
+
+          - AI use must be declared and clearly explained.
+          - Cannot be listed as author (doesn't meet accountability requirements).
+          - Authors accountable for accuracy, integrity, and originality.
+          - Use must not breach plagiarism policy.
+
+          Individual journals may have more specific requirements.
+      - h2: { id: "pnas", text: "PNAS (Proceedings of the National Academy of Sciences)" }
+      - markdown: |
+          [Official policy](https://www.pnas.org/author-center/editorial-and-journal-policies)
+
+          - Disclose generative AI use in Materials and Methods (or Acknowledgments).
+          - Cannot list AI as author.
+          - Authors solely accountable; must thoroughly fact-check outputs.
+          - AI tools for creating images/graphics prohibited unless subject of research.
+          - No AI in cover art submissions.
+      - h2: { id: "mdpi", text: "MDPI" }
+      - markdown: |
+          [Official policy](https://www.mdpi.com/ethics#_bookmark3) (Updated 20 April 2023)
+
+          - AI cannot be listed as author.
+          - Authors fully responsible for originality, validity, and integrity.
+          - Must declare AI tool use when submitting.
+          - Provide transparency in Acknowledgments section.
+          - Describe detailed usage in Materials and Methods section.
+          - Aligns with COPE position statement.
+      - h2: { id: "cell", text: "Cell Press" }
+      - markdown: |
+          [Official policy](https://www.cell.com/cell/information-for-authors)
+      - h3: "Writing process"
+      - markdown: |
+          - AI acceptable only for improving readability and language.
+          - Must apply with human oversight and control.
+          - Authors must carefully review and edit results.
+          - Authors ultimately responsible and accountable.
+      - h3: "Disclosure statement"
+      - markdown: |
+          - Required declaration at manuscript submission.
+          - Create new section after "declaration of interests".
+          - Must include tool name, reason for use, statement of author responsibility.
+          - Doesn't apply to basic tools (grammar, spelling, reference checking).
+      - h3: "Figures, images, artwork"
+      - markdown: |
+          Follows Elsevier policy (no generative AI except as research methodology).
+      - h3: "Peer review process"
+      - markdown: |
+          - Currently prohibits generative AI use by reviewers/editors.
+          - Actively evaluating compliant AI tools for future policy revision.
+
+pager:
+  prev: { ref: "section-2.disclosure", label: "Back to", title: "Disclosure &amp; Transparency" }
+  next: { ref: "section-2.uk-funders", label: "Related", title: "What UK funders said about AI use" }

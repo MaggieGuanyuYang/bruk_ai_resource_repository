@@ -1,0 +1,82 @@
+# section-2/key-regulations.html — Topic 5.
+
+title: "Key Regulations | BR-UK AI"
+description: "Copyright (CDPA 1988), UK GDPR, international/UK AI regulations, and university-level guidance for researchers."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-2", label: "Section 2: Ethics &amp; Responsibility" }
+  - { label: "Key Regulations" }
+
+badge: "Section 2 · Topic 5"
+heading: "Key Regulations"
+
+body:
+  - prose:
+      - lede: |
+          Researchers using AI tools in the UK must understand how existing laws apply to
+          both the input and output of AI tools, particularly around copyright and data
+          protection when using generative AI. As regulations evolve, it's crucial to stay
+          informed.
+      - callout:
+          heading: "When in doubt"
+          body: |
+            For complex cases, **consult your legal or data protection officer** early in the process. Err on the side of caution: transparency, documentation, and consent go a long way.
+      - h2: "Copyright and intellectual property"
+      - markdown: |
+          The Copyright, Designs and Patents Act 1988 (CDPA) protects original works (e.g. text, images, data, code). Using copyrighted material with AI can raise legal issues at several points:
+      - h3: "Input"
+      - markdown: |
+          Using someone else's copyrighted content in a prompt may infringe copyright, especially if the material is substantial or confidential.
+
+          - Don't input text or data you don't have permission to use.
+          - Avoid using AI tools that retain or reuse inputted data without consent.
+          - Always vet your sources and dataset licences.
+      - h3: "Output"
+      - markdown: |
+          Who owns AI-generated content depends on the tool's terms of use and the relevant legal framework. You may not own the output — or it may reproduce protected third-party content.
+
+          - Always check the tool's terms.
+          - If AI-generated text copies part of a third-party work, it may infringe copyright.
+          - Be cautious when publishing or sharing outputs without review.
+      - h2: "Data Protection and Privacy (UK GDPR)"
+      - markdown: |
+          If your AI use involves personal data, it must comply with the UK General Data Protection Regulation (UK GDPR).
+      - h3: "Security"
+      - markdown: |
+          Most commercial AI tools store inputted data, violating GDPR's data security principle.
+
+          - Do not input personal, sensitive, or identifiable data into AI tools that store or reuse it.
+          - Check your institution's policies on AI use and data handling.
+      - h3: "Data transfers"
+      - markdown: |
+          Many AI tools are hosted outside the UK. Exporting personal data to these services without legal safeguards breaches GDPR rules.
+
+          - You must use a legal basis (e.g. consent or contractual clauses) to transfer personal data internationally.
+          - Many AI providers won't enter into such agreements, making their use non-compliant.
+      - h2: "International regulations"
+      - markdown: |
+          - [UNESCO's non-binding recommendations on the ethics of artificial intelligence](https://unesdoc.unesco.org/ark:/48223/pf0000380455/PDF/380455eng.pdf.multi)
+          - [Living guidelines on the responsible use of generative AI in research](https://research-and-innovation.ec.europa.eu/document/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en) — European Commission
+      - h2: "UK regulations"
+      - markdown: |
+          - [UK's AI Regulation bill status](https://bills.parliament.uk/bills/3519)
+          - [Toolkit for assessing risk when developing and using AI](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ai-and-data-protection-risk-toolkit/) — ICO
+      - h2: "University regulations"
+      - markdown: |
+          Most university regulations target AI use in education and learning. For instance, the University of Edinburgh specifies that generative Artificial Intelligence stores and learns from data inputted, however AI systems are required by **data protection law** to process personal data fairly and lawfully. It is not currently always possible to delete data from an LLM neural net. Therefore these systems may not be compliant with relevant law like the UK GDPR and the Data Protection Act. To ensure the privacy of individuals, personal and sensitive data should not be entered into generative AI tools. Any data entered should not be personally identifiable and would be considered released to the internet.
+
+          - [University of Edinburgh](https://data-protection.ed.ac.uk/guidance/generative-artificial-intelligence)
+      - h2: "AI guidance and policies in other UK institutions (non-exhaustive)"
+      - markdown: |
+          - [University College London — Generative AI Hub](https://www.ucl.ac.uk/teaching-learning/generative-ai-hub)
+          - [University of Manchester — AI Guidelines](https://www.staffnet.manchester.ac.uk/dcmsr/communications/ai-guidelines/)
+          - [The University of Sheffield — Principles for Generative AI in learning and teaching](https://www.sheffield.ac.uk/saas/elevate/ai-principles)
+          - [Queen's University Belfast — DigiHub](https://blogs.qub.ac.uk/digitallearning/ai/qub-position-on-ai/)
+          - [The University of Birmingham — Generative AI and its role within teaching, learning and assessment](https://www.birmingham.ac.uk/libraries/education-excellence/gai)
+          - [University of Oxford — Use of generative AI tools to support learning](https://www.ox.ac.uk/students/academic/guidance/skills/ai-study)
+          - [London School of Economics — Guidance on the use of Generative AI for research](https://www.lse.ac.uk/DSI/Assets/documents/LSE-Guidance-on-the-use-of-Generative-AI-for-research.pdf)
+
+pager:
+  prev: { ref: "section-2.sustainability", label: "Previous topic", title: "Sustainability Concerns" }
+  next: { ref: "section-3",                label: "Continue to",    title: "Section 3: Learning Resources" }

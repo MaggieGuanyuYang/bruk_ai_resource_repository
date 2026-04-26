@@ -19,3 +19,8 @@ mobile-menu-open.png
 
 # Local server logs
 *.log
+
+# Build / verification artifacts
+.build-baseline/
+__pycache__/
+*.pyc

@@ -1,0 +1,36 @@
+# section-5.html — Disclaimer & Contact.
+
+title: "Section 5: Disclaimer & Contact | BR-UK"
+description: "Disclaimer about the evolving nature of AI resources, plus contact details for the BR-UK team."
+
+breadcrumb:
+  - { ref: "home", label: "Home" }
+  - { label: "Section 5: Disclaimer & Contact" }
+
+badge: "Section 5"
+heading: "Disclaimer & Contact"
+
+body:
+  - prose:
+      - h2: "Disclaimer"
+      - callout:
+          body: |
+            The field of AI is evolving rapidly, and some resources listed in this repository may become outdated. This collection represents our ongoing effort to compile useful AI tools and resources for behavioural researchers. It is not definitive nor are we responsible/accountable for the use of external tools or resources signposted within it.
+      - h2: "Contact"
+      - markdown: |
+          For inquiries about the contents of this webpage, please fill out our [contact form](https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58) (opens in Qualtrics), or email:
+
+          - **Dr. Guanyu Yang** at `guanyu.yang.20[@]ucl.ac.uk`
+          - **Dr. Amy Rodger** at `A.Rodger[@]ed.ac.uk`
+
+          *(Email addresses are shown with `[@]` instead of `@` to reduce spam — replace with `@` when you email.)*
+      - h2: "Suggest a resource"
+      - markdown: |
+          This is a living repository. If you know of a useful tool, paper, course, or case study we should include, please tell us via the [suggestion form](https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58).
+      - h2: "Privacy"
+      - markdown: |
+          See the [BR-UK Privacy Statement (PDF, 163 KB)](https://usher.ed.ac.uk/sites/default/files/2025-09/BR-UK%20Privacy%20Statement.pdf) for how we handle any personal data collected through this website and its forms.
+
+pager:
+  prev: { ref: "section-4", label: "Previous section", title: "4. BR-UK AI Advice Sessions" }
+  next: { ref: "home",      label: "Back to",          title: "Home" }

@@ -1,0 +1,122 @@
+# section-1/literature-review.html — Stage 1.
+
+title: "Literature Review &amp; Background Research | BR-UK AI"
+description: "AI tools for literature review and background research: Undermind, Perplexity, Elicit, Scite, NotebookLM, systematic review tools and case studies."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-1", label: "Section 1: Living Guide" }
+  - { label: "Literature Review &amp; Background Research" }
+
+badge: "Section 1 · Stage 1"
+heading: "Literature Review &amp; Background Research"
+
+body:
+  - prose:
+      - lede: |
+          AI tools can help streamline the early stages of research by finding relevant
+          papers, summarising academic content, and even pointing to gaps in the existing
+          literature. They're particularly useful when you're getting familiar with a new
+          topic, developing your research question, or exploring unfamiliar areas. While
+          these tools don't replace a rigorous, systematic literature review, they can save
+          time and support your background research.
+      - quicknav:
+          items:
+            - { href: "#what-ai-helps-with", label: "What AI can help with" }
+            - { href: "#tools",              label: "Tools" }
+            - { href: "#further-reading",    label: "Further reading" }
+            - { href: "#systematic",         label: "Tools for systematic reviews" }
+            - { href: "#case-studies",       label: "Case studies" }
+            - { href: "#evidence-synthesis", label: "Evidence synthesis tools" }
+      - h2: { id: "what-ai-helps-with", text: "What AI can help with" }
+      - markdown: |
+          AI can help you:
+
+          - Find relevant papers faster by looking at meaning, not just keywords.
+          - Summarise studies and highlight key findings, limitations, and methods.
+          - Identify gaps in the literature by comparing many papers at once.
+          - Discover related work and visualise how studies are connected.
+          - Organise your reading with tools that can "remember" and search through the documents you've saved.
+
+          Different tools have different strengths, so it's worth trying a few. Always
+          double-check any AI-generated summaries by reviewing the original papers directly.
+      - h2: { id: "tools", text: "Tools" }
+      - tool_grid:
+          - { url: "https://www.undermind.ai/",     name: "Undermind",   desc: "A researcher-led platform focused on identifying high-quality, relevant papers and ranking based on relevance. Unlike other tools that offer lengthy AI-generated summaries, Undermind keeps summaries short to encourage users to engage with the original papers directly. Especially useful when prioritising trustworthy papers and maintaining academic rigour early in the research process." }
+          - { url: "https://www.perplexity.ai/",    name: "Perplexity",  desc: "An AI-powered search tool that generates answers by searching the internet and providing direct links to original sources. Selecting the \"Academic\" option in the search settings allows you to focus on peer-reviewed papers." }
+          - { url: "https://elicit.com/",           name: "Elicit",      desc: "Speeds up exploratory (but not systematic) literature reviews. Uses AI to find papers and extract key information (research questions, findings, limitations) into a user-friendly table. Can summarise PDFs you upload. Coverage isn't as comprehensive as other platforms. Paid plans allow more tailored outputs." }
+          - { url: "https://scite.ai/home",         name: "Scite",       desc: "Helps you quickly understand how a paper is being cited. Labels citations as supporting, contrasting, or merely mentioning, and includes short quotes from citing papers alongside direct links. Useful for assessing credibility and influence of a study." }
+          - { url: "https://anara.com/",            name: "ANARA",       desc: "An academic research assistant that summarises and organises research papers. Enables efficient note-taking, citation management and collaboration, and highlights connections between sources. AI-powered chat and knowledge mapping help extract insights from extensive document collections." }
+          - { url: "https://notebooklm.google/",    name: "NotebookLM",  desc: "Your personal research assistant — upload papers, notes, and links, then ask questions grounded in the material you've saved. Useful for keeping a structured, searchable knowledge base as you progress through your research." }
+      - h3: "Related-work discovery"
+      - markdown: |
+          The following tools help discover related work to papers you already have and map the research landscape:
+
+          - [Research Rabbit](https://researchrabbitapp.com/) — a free tool that explores how papers are connected through citations. Works well with Zotero.
+          - [Connected Papers](https://www.connectedpapers.com/) — visualises related research based on shared references. A good way to explore a topic's "neighbourhood". Free and paid options.
+
+          Note that many of the above tools search [Semantic Scholar](https://www.semanticscholar.org/), a free AI-powered search engine for academic papers. While this has good coverage of academic literature, it is limited to certain publishers (e.g. it excludes Elsevier and Oxford University Press).
+
+          This isn't an exhaustive list of tools; others like [Consensus](https://consensus.app/), an AI-powered search engine that summarises academic findings across topics, and [SciSpace](https://typeset.io/), which offers paper summaries, explanations, citation tracking, and collaborative features, are also valuable for literature reviews.
+      - h2: { id: "further-reading", text: "Further reading &amp; resources" }
+      - markdown: |
+          - London School of Economics: [AI in Research Literature Reviews](https://www.lse.ac.uk/DSI/AI/AI-Research/Literature-Review)
+          - Birmingham City University: [Guide on AI Tools for Literature Review](https://libguides.bcu.ac.uk/generativeAI)
+      - h2: { id: "systematic", text: "AI tools for systematic literature reviews" }
+      - markdown: |
+          While AI tools can support various stages of the systematic review process, fully automated reviews using tools like Undermind and Elicit are not currently recommended. Traditional methods continue to be advocated for due to the need for rigorous, comprehensive analysis and repeatability. AI tools can be helpful in streamlining certain aspects of the process, but they should complement, not replace manual methods.
+
+          Ge and colleagues (2024) overview the commonly used AI tools in different systematic review processes and discuss opportunities and challenges (domain: health research):
+
+          - [**Springer — AI Tools in Systematic Reviews**](https://link.springer.com/article/10.1186/s13643-024-02682-2)
+
+          Another general overview on optimising the systematic review process using AI tools:
+
+          - [**How to Optimize Systematic Reviews with AI**](https://acamh.onlinelibrary.wiley.com/doi/full/10.1002/jcv2.12234)
+      - h2: { id: "case-studies", text: "Case studies using AI within systematic reviews" }
+      - h3: "UK Government case study"
+      - markdown: |
+          During a systematic review, the UK Government employed a range of AI tools to scan (Elicit &amp; Consensus), select and analyse (Claude 2), and synthesise papers (Claude 2 &amp; ChatGPT 4) on the impact of technology diffusion on productivity. The process was run to compare the outcome of a human review versus an AI-assisted review. Both processes produced credible but different reference lists, with overlapping findings (4/6 identified themes) on the mechanisms of technology's impact and similar conclusions (2/3). The AI-assisted review often took less time during different phases, although this wasn't always the case — human review was quicker at selecting papers and producing the draft report.
+      - blockquote:
+          body: |
+            Egan, M., Leak-Smith, L., Hanna-Amodio, A., &amp; Sirera, M. (2025). [AI-assisted vs human-only evidence review: results from a comparative study](https://www.gov.uk/government/publications/ai-assisted-vs-human-only-evidence-review/ai-assisted-vs-human-only-evidence-review-results-from-a-comparative-study). Department for Culture, Media &amp; Sport.
+      - h3: "Bernard et al. (2025) case study"
+      - markdown: |
+          Bernard and colleagues (2025) explored whether the AI tool Elicit adds value to the systematic review process compared to traditional screening methods, in the context of developing smart living environments for older adults. The study assessed Elicit's performance across repeatability, reliability, and accuracy. Results varied across repeated searches, with inconsistent findings and missed articles. This suggests that while Elicit can broaden the scope of studies, it currently lacks the consistency and rigour needed to replace traditional methods.
+      - blockquote:
+          body: |
+            Bernard, N., Sagawa Jr, Y., Bier, N., Lihoreau, T., Pazart, L., &amp; Tannou, T. (2025). Using artificial intelligence for systematic review: The example of elicit. *BMC Medical Research Methodology*, 25(1), 75. [https://doi.org/10.1186/s12874-025-02528-y](https://doi.org/10.1186/s12874-025-02528-y)
+      - h3: "Pang et al. protocol"
+      - markdown: |
+          Protocols for comparing AI tools and traditional approaches in systematic reviews are also emerging:
+      - blockquote:
+          body: |
+            Pang, X., Saif-Ur-Rahman, K., Berhane, S., Yao, X., Kothari, K., Taneri, P. E., Thomas, J., &amp; Devane, D. (2025). Comparing Artificial Intelligence and manual methods in systematic review processes: Protocol for a systematic review. *Journal of Clinical Epidemiology*, 181, 111738. [https://doi.org/10.1016/j.jclinepi.2025.111738](https://doi.org/10.1016/j.jclinepi.2025.111738)
+      - h2: { id: "evidence-synthesis", text: "AI tools specifically for evidence synthesis (non-exhaustive)" }
+      - markdown: |
+          - [King's College London — AI Tools in Evidence Synthesis](https://libguides.kcl.ac.uk/systematicreview/ai) — providing an overview of tools used in developing search strategies, locating relevant articles, and during data screening, extraction, and synthesis.
+      - tool_grid:
+          - { url: "https://www.rayyan.ai/",                                                          name: "Rayyan",         desc: "A free, web-based platform designed to expedite the screening and selection process in systematic reviews. Offers collaborative features, including real-time conflict resolution among reviewers, and supports both web and mobile interfaces." }
+          - { url: "https://www.distillersr.com/products/distillersr-systematic-review-software",     name: "DistillerSR",    desc: "A commercial, web-based application designed to automate all stages of systematic literature reviews. Offers AI-assisted screening, customisable workflows, and audit trails to ensure regulatory compliance." }
+          - { url: "https://www.robotreviewer.net/",                                                   name: "RobotReviewer",  desc: "A machine learning system that automates the assessment of risk of bias in randomised controlled trials. Extracts information directly from PDFs, assesses risk-of-bias domains in the Cochrane Risk of Bias Tool, and provides supporting information for each judgment." }
+          - { url: "https://eppi.ioe.ac.uk/cms/Default.aspx?tabid=2914",                               name: "EPPI-reviewer",  desc: "Offers integrated text mining capabilities and specialised visualisation tools, supporting both qualitative and quantitative evidence synthesis. Facilitates screening, data extraction, and synthesis." }
+      - callout:
+          kind: "caution"
+          heading: "Five things to remember"
+          body: |
+            <ul style="margin-bottom:0;">
+              <li>Double-check every AI-generated summary against the original paper.</li>
+              <li>Different tools have different strengths — try a few.</li>
+              <li>Fully automated systematic reviews are not currently recommended.</li>
+              <li>AI should complement, not replace, manual systematic-review methods.</li>
+              <li>Watch for publisher coverage gaps (e.g. Semantic Scholar excludes Elsevier and OUP).</li>
+            </ul>
+      - references:
+          heading: "Key references"
+          items:
+            - "Ge, L., Agrawal, R., Singer, M., Kannapiran, P., De Castro Molina, J. A., Teow, K. L., Yap, C. W., &amp; Abisheganaden, J. A. (2024). Leveraging artificial intelligence to enhance systematic reviews in health research: Advanced tools and challenges. *Systematic Reviews*, 13(1), 269. [https://doi.org/10.1186/s13643-024-02682-2](https://doi.org/10.1186/s13643-024-02682-2)"
+            - "Fabiano, N., Gupta, A., Bhambra, N., Luu, B., Wong, S., Maaz, M., Fiedorowicz, J. G., Smith, A. L., &amp; Solmi, M. (2024). How to optimize the systematic review process using AI tools. *JCPP Advances*, 4(2), e12234. [https://doi.org/10.1002/jcv2.12234](https://doi.org/10.1002/jcv2.12234)"
+
+pager:
+  prev: { ref: "section-1",                       label: "Section overview", title: "Section 1: Living Guide" }
+  next: { ref: "section-1.hypothesis-generation", label: "Next stage",       title: "Hypothesis Generation &amp; Study Design" }

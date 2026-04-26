@@ -1,0 +1,83 @@
+# section-2/disclosure.html — Topic 1.
+
+title: "Disclosure &amp; Transparency | BR-UK AI"
+description: "How to disclose AI use in research — core rules, publisher and funder policies, and disclosure templates."
+
+breadcrumb:
+  - { ref: "home",      label: "Home" }
+  - { ref: "section-2", label: "Section 2: Ethics &amp; Responsibility" }
+  - { label: "Disclosure &amp; Transparency" }
+
+badge: "Section 2 · Topic 1"
+heading: "Disclosure &amp; Transparency"
+
+body:
+  - prose:
+      - lede: |
+          As AI tools become more integrated into the research process, transparency
+          about how they're used is essential. Clear disclosure supports research
+          integrity, builds trust, and ensures compliance with ethical, institutional,
+          and publishing standards.
+      - markdown: |
+          Generative AI tools, in particular, can shape the tone, content, and structure of research outputs and may introduce bias or inaccuracies. Without proper disclosure, it can be difficult for reviewers, collaborators, or the public to understand how AI influenced the research.
+      - h2: "When using AI tools in research or writing"
+      - markdown: |
+          - **Name the tool and purpose** (e.g. summarising literature, drafting, translation).
+          - **Provide a basic audit trail** (e.g. example prompts or usage summary).
+          - **Confirm human oversight** (e.g. whether outputs were reviewed or edited).
+          - **Check funder and publisher policies early** in your workflow, as expectations vary.
+
+          Many publishers and funders provide specific guidance on using AI in research. Some require disclosure statements or audit trails, while others prohibit sharing confidential or unpublished work with AI tools. If no clear guidance is available, researchers should contact the relevant organisation directly for clarification.
+      - subpage_list:
+          style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.8rem; margin: 2rem 0"
+          items:
+            - { ref: "section-2.publishers", title: "What publishers said about AI use", blurb: "Nature, Elsevier, Taylor &amp; Francis, SAGE, Wiley, APA, Frontiers, Cambridge, PNAS, MDPI, Cell Press" }
+            - { ref: "section-2.uk-funders", title: "What UK funders said about AI use", blurb: "UKRI joint statement, Wellcome, Leverhulme, British Academy, Royal Society, and more" }
+      - h2: "Core rules for AI use in academic publishing and funding applications"
+      - h3: "1. AI cannot be an author"
+      - markdown: |
+          - No publisher allows AI to be listed as an author or co-author.
+          - Authorship requires human accountability and responsibility.
+          - Even if AI contributed significantly to text, humans must take full responsibility.
+      - h3: "2. Distinguish between assistive and generative AI use"
+      - markdown: |
+          - **Assistive AI** (grammar checking, language polishing): Generally does not require disclosure.
+          - **Generative AI** (content creation, substantial editing): Always requires disclosure.
+          - When in doubt, disclose AI use to maintain transparency.
+      - h3: "3. Disclose generative AI use properly"
+      - markdown: |
+          - Include in methods or acknowledgements section (check journal preference).
+          - Specify the name and version of the AI tool used.
+          - Explain how and why it was used in your research process.
+          - Some journals require detailed documentation of prompts and outputs.
+      - h3: "4. Protect confidentiality"
+      - markdown: |
+          - Peer reviewers must not input manuscripts they're reviewing.
+          - Don't share confidential research data or funding applications with AI.
+          - Be aware: text entered into generative AI tools may be stored or used for AI training.
+      - h3: "5. Follow strict image policies"
+      - markdown: |
+          - Most publishers prohibit using AI to create or manipulate research images/figures.
+          - Limited exceptions exist only when AI imaging is itself the research subject.
+          - When permitted, AI-generated images must be clearly labelled.
+      - h3: "6. Check terms of use"
+      - markdown: |
+          - Ensure AI tools don't claim ownership of your content.
+          - Verify that using the tool doesn't compromise your intellectual property rights.
+          - Consider privacy implications of data entered into AI systems.
+      - h3: "7. Always check specific guidelines"
+      - markdown: |
+          - Individual journals or funding agencies may have their own specific requirements.
+          - Some require submission of AI prompts and outputs as supplementary materials.
+      - h2: "Publisher disclosure template (Elsevier)"
+      - blockquote:
+          body: |
+            "During the preparation of this work the author(s) used [NAME TOOL / SERVICE] in order to [REASON]. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the publication."
+      - callout:
+          heading: "Planning a submission or application?"
+          body: |
+            Start with the two dedicated pages above — they compile what major publishers and all UK funders have said about AI use, so you know what's expected before you submit.
+
+pager:
+  prev: { ref: "section-2",        label: "Section overview", title: "Section 2: Ethics &amp; Responsibility" }
+  next: { ref: "section-2.biases", label: "Next topic",       title: "Biases" }
