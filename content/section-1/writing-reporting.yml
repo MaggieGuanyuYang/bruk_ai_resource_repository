@@ -28,7 +28,6 @@ body:
             - { href: "#caution",      label: "Caution" }
             - { href: "#publication",  label: "Publication" }
             - { href: "#presentation", label: "Presentation &amp; outreach" }
-            - { href: "#citations",    label: "Citation generation tools" }
             - { href: "#further",      label: "Further reading" }
       - h2: { id: "writing", text: "Writing &amp; reporting" }
       - markdown: |
@@ -36,7 +35,7 @@ body:
 
           When confronted with writer's block — a common challenge in academic writing — these AI assistants can provide useful prompts and alternative perspectives that stimulate your thinking and help you get started in your write-up journey.
 
-          Common tools include ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic), Microsoft Copilot, Perplexity AI, and Grammarly. See [LSE's guide on Drafting and Re-writing](https://www.lse.ac.uk/DSI/AI/AI-Research/Drafting-and-Re-writing). [Watch this video](https://www.youtube.com/watch?v=Dm5zgBQoi_w) for a walkthrough of an academic writing process.
+          Common tools include ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic), Microsoft Copilot, Perplexity AI, and Grammarly. [Watch this video](https://www.youtube.com/watch?v=Dm5zgBQoi_w) for a walkthrough of an academic writing process.
       - h2: { id: "caution", text: "Caution" }
       - callout:
           kind: "caution"
@@ -48,8 +47,8 @@ body:
       - markdown: |
           There already exist a few AI tools to help boost your chance at publication by going through a pre-submission "peer" review. A recent Nature article titled [AI is transforming peer review — and many scientists are worried](https://www.nature.com/articles/d41586-025-00894-7) discussed several such AI tools.
       - tool_grid:
-          - { url: "https://paper-wizard.com/",            name: "Paper-Wizard", desc: "Generates comprehensive multi-page reviews that examine methodological designs and statistical rigour when authors upload their work." }
-          - { url: "https://groundedai.company/veracity/", name: "Veracity",     desc: "Currently in private beta. Offers pre-submission fact-checking by verifying whether cited papers exist and whether they truly support the authors' claims." }
+          - { url: "https://explorescience.ai/",           name: "Explore Science",           desc: "Generates comprehensive multi-page reviews that examine methodological designs and statistical rigour when authors upload their work." }
+          - { url: "https://natureresearchassistant.com/", name: "Nature Research Assistant", desc: "Its manuscript advisor reviews drafts, offering tailored advice, suggestions and technical feedback before submission. It also suggests related papers for your reference list." }
       - markdown: |
           While debate continues about AI's appropriate role in formal peer review, these pre-submission tools represent a potentially less controversial application that could benefit both authors and reviewers.
       - h2: { id: "presentation", text: "Presentation &amp; outreach" }
@@ -59,11 +58,6 @@ body:
           - { url: "https://notebooklm.google/", name: "NotebookLM", tag: "Free",           desc: "Its podcast creation function offers a novel way to disseminate your research. Simply upload your protocols or written reports, and a 15-minute podcast between two AI characters will be generated. You can even jump in during the \"broadcast\" to ask the AI questions.", link_url: "https://artificialthought.substack.com/", link_text: "Listen to Artificial Thought podcast" }
           - { url: "https://gamma.app/",         name: "Gamma AI",  tag: "Free &amp; paid", desc: "Particularly useful for generating slides. Excels at transforming text-based inputs — prompts, outlines, or existing documents — into polished, visually engaging presentations. Great for conferences, lectures, or public engagement.", link_url: "https://www.youtube.com/watch?v=AMCwO4UZAA8", link_text: "Watch a video tutorial" }
           - { url: "https://www.napkin.ai/",     name: "Napkin AI", tag: "Free",           desc: "A visualisation platform that transforms your writing into graphs. If you're preparing visuals for a slide deck, Napkin AI can suggest effective and engaging ways to organise your ideas graphically — helping you move away from text-heavy slides. It also assists in designing research posters that communicate your message more effectively." }
-      - h2: { id: "citations", text: "Citation generation &amp; formatting tools" }
-      - markdown: |
-          - [Scribbr Citation Generator](https://www.scribbr.co.uk/referencing/generator/) (free) — provides APA Citation Checker, Citation Editing, and Citation Generator.
-          - [QuillBot Citation Generator](https://quillbot.com/citation-generator) (free) — create, edit, and save citations in over 1,000 different styles.
-          - [Grammarly Citation Generator](https://www.grammarly.com/citations) (free) — provides formatted APA, MLA, and Chicago-style citations.
       - h2: { id: "further", text: "Further reading" }
       - markdown: |
           - [Using artificial intelligence in academic writing and research: An essential productivity tool](https://www.sciencedirect.com/science/article/pii/S2666990024000120#sec0003)

@@ -1,7 +1,8 @@
 # section-1/data-analysis.html — Stage 4.
+# Citations are in-text and hyperlinked rather than listed as a reference block.
 
 title: "Data Analysis &amp; Interpretation | BR-UK AI"
-description: "AI tools for quantitative and qualitative data analysis: Julius AI, Ailyze, Hugging Face, GenAI platforms, and code editors."
+description: "AI tools for quantitative and qualitative data analysis: Julius AI, Evidano, Hugging Face, QInsights, Delve, GenAI platforms, and code editors."
 
 breadcrumb:
   - { ref: "home",      label: "Home" }
@@ -17,6 +18,15 @@ body:
           This section introduces essential AI-powered analytical tools designed to help
           behavioural researchers extract meaningful insights from diverse datasets across
           research methodologies.
+      # quicknav sits above the first h2 it links to, matching the sibling stage
+      # pages — otherwise its own first entry scrolls the reader backwards.
+      - quicknav:
+          items:
+            - { href: "#help",         label: "What AI can help with" }
+            - { href: "#tools",        label: "Tools" }
+            - { href: "#quantitative", label: "AI for quantitative analysis" }
+            - { href: "#qualitative",  label: "AI for qualitative analysis" }
+      - h2: { id: "help", text: "What AI can help with" }
       - h3: "For qualitative analyses"
       - markdown: |
           - AI can extract key themes and trends from large textual datasets.
@@ -26,42 +36,78 @@ body:
           - AI can generate visualisations for complex data trends.
           - AI can provide quick solutions to coding errors.
           - AI-powered tools like Julius AI and GenAI platforms may help analyse statistical data.
-      - quicknav:
-          items:
-            - { href: "#tools",        label: "Tools" }
-            - { href: "#quantitative", label: "AI for quantitative analysis" }
-            - { href: "#qualitative",  label: "AI for qualitative analysis" }
       - h2: { id: "tools", text: "Tools" }
+      # Two parallel h3s so it is clear the boxed tools and the GenAI platforms are
+      # siblings, not one nested inside the other.
+      - h3: "Purpose-built research tools"
       - tool_grid:
-          - { url: "https://julius.ai/chat",  name: "Julius AI",     tag: "Free &amp; paid",       desc: "A comprehensive data analysis platform that processes multiple file formats, provides visualisations, and executes code in Python and R. Offers automatic data correction, PDF information extraction, and structured \"Workflows\" for common analytical procedures, while employing \"Advanced Reasoning\" to break complex requests into manageable steps with web search capabilities.", link_url: "https://www.youtube.com/watch?v=OdHLOqxM_XQ&amp;t=41s", link_text: "Watch a walkthrough video" }
-          - { url: "https://www.ailyze.com/", name: "Ailyze",        tag: "Paid",                  desc: "Can be used for assisted coding, document analysis, and thematic/content analysis. There is also an AI interviewer option for collecting qualitative data, but the free version only offers limited features for qualitative data analysis." }
-          - { url: "https://huggingface.co",  name: "Hugging Face",  tag: "Free &amp; paid tiers", desc: "Hosts thousands of AI models and datasets, many open-source and useful for research. Access pre-trained models for sentiment analysis, emotion detection, text classification, and named entity recognition to analyse interview transcripts, survey responses, and social media data. Models can be tested via web interface, downloaded for local use, or accessed through the Inference API. Includes emotion datasets like GoEmotions and Twitter emotion data for training or validation. Particularly valuable for analysing qualitative data at scale." }
+          heading_level: "h4"
+          items:
+          - { url: "https://julius.ai/",        name: "Julius AI",    tag: "Free &amp; paid",       desc: "A comprehensive data analysis platform that processes multiple file formats, provides visualisations, and executes code in Python and R. Offers automatic data correction, PDF information extraction, and structured \"Workflows\" for common analytical procedures, while employing \"Advanced Reasoning\" to break complex requests into manageable steps with web search capabilities.", link_url: "https://www.youtube.com/watch?v=OdHLOqxM_XQ&amp;t=41s", link_text: "Watch a walkthrough video" }
+          - { url: "https://www.evidano.com/",  name: "Evidano",      tag: "Paid",                  desc: "Previously Ailyze. Supports assisted coding, document analysis and thematic or content analysis, with an AI interviewer option for collecting qualitative data. The free tier offers only limited qualitative analysis features." }
+          - { url: "https://huggingface.co",    name: "Hugging Face", tag: "Free &amp; paid tiers", desc: "Hosts thousands of AI models and datasets, many open-source and useful for research. Access pre-trained models for sentiment analysis, emotion detection, text classification, and named entity recognition to analyse interview transcripts, survey responses, and social media data. Models can be tested via web interface, downloaded for local use, or accessed through the Inference API. Particularly valuable for analysing qualitative data at scale." }
+          - { url: "https://qinsights.ai/",     name: "QInsights",    tag: "Free &amp; paid",       desc: "Built for thematic analysis of interviews, focus groups and open-ended survey responses. Every AI-surfaced theme links back to the underlying quotes, so findings stay traceable for supervision, peer review or stakeholder scrutiny. You ask the questions and interpret the results; the AI organises, retrieves and surfaces candidate patterns rather than generating themes on its own." }
+          - { url: "https://delvetool.com/",    name: "Delve",        tag: "Paid",                  desc: "AI-assisted qualitative coding built around conversing with your data — query your whole corpus or selected codes and transcripts, and get answers with snippet citations back to the source. Works like a virtual peer debriefer for talking through emerging findings. The AI features can be switched off entirely where a protocol prohibits AI use." }
       - h3: "GenAI platforms (ChatGPT, Claude, Gemini, Deepseek)"
       - markdown: |
           GenAI platforms can be helpful in qualitative analyses, as well as generating R or Python code for quantitative analyses:
 
-          - **Quantitative analyses in R, Stata, or Python:** they can help generate and debug efficient code for complex statistical procedures, create customised data visualisations, and translate technical outputs into clear interpretations. You can prompt them to recommend appropriate statistical methods based on research questions, generate code for data preprocessing, and write comprehensive documentation (e.g. ReadMe files) for reproducibility. AI assistants can also convert analysis scripts between languages while maintaining analytical integrity.
-          - More sophisticated AI-powered code editors include [GitHub's Copilot](https://github.com/features/copilot), [Cursor](https://www.cursor.com/en), and [Windsurf](https://windsurfai.org/). They are also helpful in building web and smartphone applications for your study design.
+          - **Quantitative analyses in R, Stata, or Python:** by creating artefacts, these platforms can help generate and debug efficient code for complex statistical procedures, create customised data visualisations, and translate technical outputs into clear interpretations. You can prompt them to recommend appropriate statistical methods based on research questions, generate code for data preprocessing, and write comprehensive documentation (e.g. ReadMe files) for reproducibility. They can also convert analysis scripts between languages while maintaining analytical integrity.
+          - More sophisticated AI-powered code editors include [GitHub's Copilot](https://github.com/features/copilot), [Cursor](https://www.cursor.com/en), [Windsurf](https://windsurf.com/), [Claude Code](https://www.claude.com/product/claude-code), and [Codex](https://openai.com/codex/). They are also helpful in building web and smartphone applications for your study design.
       - h2: { id: "quantitative", text: "AI for quantitative analysis" }
+      - markdown: |
+          Research shows that it can be risky for researchers with little expertise in
+          quantitative analyses to use GenAI for such quantitative methods: Prandner and
+          colleagues ([2025](https://doi.org/10.3389/feduc.2024.1417900)) found that analysis
+          procedures were often general and not clearly illustrated, making it difficult for a
+          naïve user to make informed decisions. It also shows difficulties with proprietary
+          software (SPSS) but more promising results with open-source software (R). The AI can
+          act as a starting point or provide partial solutions, but without a foundational
+          understanding of statistics and software, the naïve user may struggle to evaluate the
+          AI's output, make informed decisions, and correct errors.
+
+          For sentiment analysis, Lossio-Ventura and colleagues
+          ([2024](https://doi.org/10.2196/50150)) found that LLMs, particularly ChatGPT and
+          fine-tuned OPT, represent a significant advancement, especially for health-related
+          survey data, offering superior performance and efficiency gains. They caution that
+          users should be aware of the limitations — particularly concerning protected health
+          information, potential errors with linguistic nuances and specialised terminology,
+          and the necessity for human oversight. Open-source LLMs like OPT provide a promising
+          alternative.
+      - h2: { id: "qualitative", text: "AI for qualitative analysis" }
       - callout:
           kind: "caution"
-          heading: "Caution"
+          heading: "A contested area — read both sides first"
           body: |
-            Research shows it can be risky for researchers with little expertise in quantitative analyses to use GenAI for such methods. Prandner and colleagues ([2025](https://doi.org/10.3389/feduc.2024.1417900)) found that analysis procedures were often general and not clearly illustrated, making it difficult for a naïve user to make informed decisions. They also show difficulties with proprietary software (SPSS) but more promising results with open-source software (R). AI can act as a starting point or provide partial solutions, but without a foundational understanding of statistics and software, the naïve user may struggle to evaluate the AI's output, make informed decisions, and correct errors.
-      - h2: { id: "qualitative", text: "AI for qualitative analysis — case studies" }
-      - h3: "Wheeler (2025) — how-to guide"
+            The use of AI for qualitative analysis, especially reflexive approaches like
+            thematic analysis, phenomenology and ethnography, is highly contested. In late
+            2025, 419 experienced qualitative researchers signed an open letter rejecting AI
+            for reflexive research ([Jowsey et al., 2025](https://doi.org/10.1177/10778004251401851)),
+            arguing that AI cannot "make meaning", that reflexive analysis is inherently
+            human, and that AI infrastructure carries environmental and social costs.
+
+            That position has been challenged. Responses argue that when the researcher stays
+            in control the core of reflexive work remains intact, and that binary thinking in
+            the current polarising debate is unhelpful
+            ([Greenhalgh, 2026](https://doi.org/10.1177/10778004261429383);
+            [Friese, 2025](https://dx.doi.org/10.2139/ssrn.5690262)).
+
+            Before using AI in qualitative analysis, review both sides and consider whether
+            the critiques apply to your method, your use case and your level of AI
+            involvement. This isn't settled, and your view may reasonably differ depending on
+            your analytic tradition and how you use the tools.
+      - markdown: |
+          Check out this more comprehensive
+          [repository of AI tools for qualitative data analysis](https://www.surrey.ac.uk/computer-assisted-qualitative-data-analysis/qual-ai/ai-tools-qda)
+          maintained by the CAQDAS Networking Project at the University of Surrey.
+      - h3: "Case studies"
+      - h4: "Wheeler (2025) — how-to guide"
       - markdown: |
           Wheeler ([2025](https://doi.org/10.4135/9781036217471)) provides an excellent introductory how-to guide on using Generative AI to assist in qualitative data analysis.
-      - h3: "Floris et al. (2024) — engagement with research"
-      - markdown: |
-          Floris and colleagues ([2024](https://doi.org/10.1016/j.ssaho.2024.100846)) employed Ailyze for rapid automated identification of preliminary themes. This technological approach was then complemented by manual thematic analysis to refine the findings. According to the paper, the combined analyses allowed for thorough verification of themes, ensuring they accurately reflected the complexities and nuances present in participants' experiences.
-      - h3: "Cameron (2025) — MIT comparison"
-      - markdown: |
-          Cameron ([2025](https://doi.org/10.31235/osf.io/myqz6_v2)) at MIT compared the performance of thematic analysis conducted by trained graduate students and Ailyze, and found that the AI-powered tool was 75% faster and assessed as producing higher quality output.
-      - h3: "Smirnov (2025) — LLM content analyses"
+      - h4: "Smirnov (2025) — LLM content analyses"
       - markdown: |
           Smirnov ([2025](https://doi.org/10.1080/14780887.2024.2428255)) used simulations with ChatGPT and Claude to perform content analyses and narrative analyses and compared them with real human output. Their findings suggest that LLMs hold great promise with the right prompts in coding textual data and generating insightful themes with increased credibility and reduced time.
-      - h3: 'Hayes (2025) — "conversing" with data'
+      - h4: 'Hayes (2025) — "conversing" with data'
       - markdown: |
           Hayes ([2025](https://doi.org/10.1177/16094069251322346)) highlights the potential of LLMs as collaborative analytical partners, enabling researchers to "converse" with textual data through targeted questioning, revealing patterns and connections that might otherwise remain hidden. AI tools such as Claude can dramatically accelerate traditional tasks like transcription, coding, and theme identification while maintaining the researcher's control over interpretation and conceptual framing.
 

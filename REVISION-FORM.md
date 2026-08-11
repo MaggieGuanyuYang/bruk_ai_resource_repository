@@ -42,7 +42,7 @@ sub-fields:
 
 - **Location or old text.** Where on the page the change goes. This can be:
     - a direct quote of the existing wording (best — removes ambiguity), or
-    - a description of position (e.g. *"In the Tools box, after Ailyze"*), or
+    - a description of position (e.g. *"In the Tools box, after Evidano"*), or
     - the name of a section or box (e.g. *"General reading box"*).
 - **Updated text.** The new wording, or the new content to add.
 
