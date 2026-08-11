@@ -1,14 +1,14 @@
-# section-4.html — BR-UK AI Advice Sessions.
+# section-4.html — BR-UK AI Webinars and Advice Sessions.
 
-title: "Section 4: BR-UK AI Advice Sessions | BR-UK"
-description: "Catch up on BR-UK's three online AI advice sessions for behavioural researchers — with Janna Hastings, Susan Michie, Amy Rodger, Maggie Guanyu Yang, and Robert West."
+title: "Section 4: BR-UK AI Webinars and Advice Sessions | BR-UK"
+description: "Catch up on BR-UK's AI webinars and three online advice sessions for behavioural researchers — with Janna Hastings, Susan Michie, Amy Rodger, Maggie Guanyu Yang, and Robert West."
 
 breadcrumb:
   - { ref: "home", label: "Home" }
-  - { label: "Section 4: BR-UK AI Advice Sessions" }
+  - { label: "Section 4: BR-UK AI Webinars and Advice Sessions" }
 
 badge: "Section 4"
-heading: "BR-UK AI Advice Sessions"
+heading: "BR-UK AI Webinars and Advice Sessions"
 
 body:
   - prose:
@@ -33,8 +33,8 @@ body:
       - callout:
           heading: "Have a question for future sessions?"
           body: |
-            Use our [contact form](https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58) or email Dr Amy Rodger or Dr Maggie Guanyu Yang — see [Section 5](section-5.html).
+            Use our [contact form](https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58) or email Dr Amy Rodger or Dr Maggie Guanyu Yang — see [Section 6](section-5.html).
 
 pager:
   prev: { ref: "section-3", label: "Previous section", title: "3. Learning Resources" }
-  next: { ref: "section-5", label: "Next section",     title: "5. Disclaimer & Contact" }
+  next: { ref: "statement", label: "Next section",     title: "5. BR-UK Statement" }

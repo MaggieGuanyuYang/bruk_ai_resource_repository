@@ -7,38 +7,17 @@
       <p class="hero__lede">
         {{ data.hero.lede | trim | indent(8) | safe_amp | safe }}
       </p>
+{%- if data.hero.actions %}
       <div class="hero__actions">
 {%- for action in data.hero.actions %}
         <a class="btn btn--{{ action.style }}" href="{% if action.ref is defined %}{{ link_for(action.ref) }}{% else %}{{ action.href }}{% endif %}">{{ action.label | safe_amp | safe }}</a>
 {%- endfor %}
       </div>
+{%- endif %}
     </div>
   </section>
 
   <main id="main">
-    <div class="container">
-      <div id="sections"></div>
-      <h2 style="margin-top:0">{{ data.explore.heading | safe_amp | safe }}</h2>
-      <p style="max-width:62ch; color: var(--ink-700);">
-        {{ data.explore.intro | trim | indent(8) | safe_amp | safe }}
-      </p>
-
-      <div class="section-grid">
-
-{%- for card in data.section_cards %}
-        <a class="section-card" href="{{ link_for(card.ref) }}">
-          <span class="section-card__num">{{ card.num | safe_amp | safe }}</span>
-          <h3 class="section-card__title">{{ card.title | safe_amp | safe }}</h3>
-          <p class="section-card__desc">
-            {{ card.desc | trim | indent(12) | safe_amp | safe }}
-          </p>
-          <span class="section-card__meta">{{ card.meta | safe_amp | safe }}</span>
-        </a>
-
-{%- endfor %}
-      </div>
-    </div>
-
     <section class="audience">
       <div class="audience__inner">
 {%- for item in data.audience %}
@@ -55,8 +34,31 @@
       </div>
     </section>
 
-    <div class="container" style="padding-top: 3rem;">
-      <h2 style="margin-top: 0;">{{ data.what.heading | safe_amp | safe }}</h2>
+    <div class="container">
+      <div id="sections"></div>
+      <h2 style="margin-top:0">{{ data.explore.heading | safe_amp | safe }}</h2>
+{%- if data.explore.intro %}
+      <p style="max-width:62ch; color: var(--ink-700);">
+        {{ data.explore.intro | trim | indent(8) | safe_amp | safe }}
+      </p>
+{%- endif %}
+
+      <div class="section-grid">
+
+{%- for card in data.section_cards %}
+        <a class="section-card" href="{{ link_for(card.ref) }}">
+          <span class="section-card__num">{{ card.num | safe_amp | safe }}</span>
+          <h3 class="section-card__title">{{ card.title | safe_amp | safe }}</h3>
+          <p class="section-card__desc">
+            {{ card.desc | trim | indent(12) | safe_amp | safe }}
+          </p>
+          <span class="section-card__meta">{{ card.meta | safe_amp | safe }}</span>
+        </a>
+
+{%- endfor %}
+      </div>
+
+      <h2>{{ data.what.heading | safe_amp | safe }}</h2>
       <div class="prose" style="max-width: 70ch;">
 {%- for para in data.what.paragraphs %}
         <p>
@@ -64,6 +66,12 @@
         </p>
 {%- endfor %}
       </div>
+{%- if data.suggest %}
+
+      <div class="prose" style="max-width: 70ch;">
+{{ render_blocks(data.suggest, 8) }}
+      </div>
+{%- endif %}
     </div>
   </main>
 {% endblock -%}

@@ -1,7 +1,7 @@
 # section-1/index.html — Section 1 overview ("Living Guide").
 
 title: "Section 1: Living Guide of AI in Behavioural Research | BR-UK"
-description: "Stage-by-stage guidance on using AI in literature review, hypothesis generation, data collection, analysis, and writing & reporting."
+description: "Resources on how to use AI in literature review, hypothesis generation, data collection, analysis, and writing & reporting."
 
 breadcrumb:
   - { ref: "home", label: "Home" }
@@ -16,18 +16,30 @@ body:
           font_size: "1.12rem"
           text: |
             AI can assist in multiple stages of the research process, from literature reviews
-            to data analysis and report writing. Think of AI as another colleague, able to
-            help and assist (with some limitations) rather than a complete replacement. AI
-            has the ability to enhance the work we are doing, making daily tasks simpler and
-            less onerous, but there are some things to consider before starting a project.
+            to data analysis and report writing. It has the ability to enhance the work we are
+            doing, making daily tasks simpler and less onerous, but there are some things to
+            consider before starting a project.
+      # Bounded by rules top and bottom so this detour reads as distinct from the
+      # lede above and the stage list below. Deliberately kept off the heading
+      # hierarchy — "Jump to a stage of your research" is the page's only h2.
+      - raw: |
+          <hr style="margin: 1.5em 0 1.1em">
+      - markdown: |
+          **Not sure where to start?** If you do not have a specific research task or AI tool in mind, check out these resources:
+
+          - [Caltech Science Exchange](https://scienceexchange.caltech.edu/topics/artificial-intelligence-research) — what AI is and what it can do.
+          - [AI and the future of behavioural science](https://www.youtube.com/watch?v=x1hojUoNbFM&amp;t=35s) — LSE public event on how AI is already changing the field.
+          - [Can Generative AI improve social science?](https://doi.org/10.1073/pnas.2314021121) — Bail (2024), *PNAS*.
+      - raw: |
+          <hr style="margin: 1.1em 0 0">
       - h2: "Jump to a stage of your research"
       - markdown: |
           Each sub-page covers a specific stage of the research lifecycle, with tools, real
           examples, and key references.
   - subpage_list:
       - ref: "section-1.literature-review"
-        title: "Literature Review &amp; Background Research"
-        blurb: "Find relevant papers, summarise studies, identify gaps and map the landscape."
+        title: "Background Research &amp; Evidence Synthesis"
+        blurb: "Find and map relevant papers, then use AI responsibly in systematic reviews."
       - ref: "section-1.hypothesis-generation"
         title: "Hypothesis Generation &amp; Study Design"
         blurb: "Refine research questions, generate hypotheses, and design surveys or interventions."
@@ -41,22 +53,14 @@ body:
         title: "Writing &amp; Reporting"
         blurb: "Draft, edit, cite, and disseminate research with AI support — responsibly."
   - callout:
-      heading: "A note on role"
+      heading: "A Note on Responsible Use"
       body: |
-        Throughout this section we treat AI as a **supportive colleague**,
-        not a replacement. Keep core research skills sharp, verify AI outputs, and stay
-        aware of ethical and methodological limits — see
-        [Section 2](../section-2/index.html) for the ethics side of the story.
-  - references:
-      heading: "Selected references for this section"
-      items:
-        - "Heidt, M. (2025). *Nature*, 640(8058), 555–557."
-        - "Charness et al. (2025). *Nature Human Behaviour*."
-        - "Gibney, E. (2025). *Nature*."
-        - "Khalifa, M., &amp; Albadawy, M. (2024). *Computer Methods and Programs in Biomedicine Update*."
-        - "Messeri, L., &amp; Crockett, M. J. (2024). *Nature*, 627(8002), 49–58."
-        - "Abdurahman, S. et al. (2024). *PNAS Nexus*, 3(7)."
+        We advocate for a human-in-the-loop approach with thorough testing and careful
+        evaluation of AI methods. Researchers should explore AI's capabilities
+        responsibly, aware of benefits and inherent challenges — see
+        [Section 2](../section-2/index.html) and the
+        [Section 5 BR-UK AI Statement](../statement.html) for responsible use of AI.
 
 pager:
   prev: { ref: "home",                          label: "Back to",     title: "Home" }
-  next: { ref: "section-1.literature-review",   label: "Start with",  title: "Literature Review" }
+  next: { ref: "section-1.literature-review",   label: "Start with",  title: "Background Research &amp; Evidence Synthesis" }

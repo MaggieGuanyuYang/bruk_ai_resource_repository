@@ -24,8 +24,9 @@ nav:
   - { ref: "section-1", label: "1. Living Guide",               match: "section-1" }
   - { ref: "section-2", label: "2. Ethics & Responsibility",    match: "section-2" }
   - { ref: "section-3", label: "3. Learning Resources",         match: "section-3" }
-  - { ref: "section-4", label: "4. Advice Sessions",            match: "section-4" }
-  - { ref: "about",     label: "BR-UK Statement",               match: "about" }
+  - { ref: "section-4", label: "4. Webinars & Advice Sessions", match: "section-4" }
+  - { ref: "statement", label: "5. BR-UK Statement",            match: "statement" }
+  - { ref: "section-5", label: "6. Disclaimer & Contact",       match: "section-5" }
 
 # Footer block. The home page overrides `about` and `contact` with its own keys.
 footer:
@@ -37,9 +38,9 @@ footer:
     - { ref: "section-1", label: "1. Living Guide" }
     - { ref: "section-2", label: "2. Ethics & Responsibility" }
     - { ref: "section-3", label: "3. Learning Resources" }
-    - { ref: "section-4", label: "4. Advice Sessions" }
-    - { ref: "about",     label: "BR-UK Statement" }
-    - { ref: "section-5", label: "5. Disclaimer & Contact" }
+    - { ref: "section-4", label: "4. Webinars & Advice Sessions" }
+    - { ref: "statement", label: "5. BR-UK Statement" }
+    - { ref: "section-5", label: "6. Disclaimer & Contact" }
   contact_heading: "Get in touch"
   contact:
     - { url: "https://edinburgh.eu.qualtrics.com/jfe/form/SV_3Q51tiL8OymwC58", label: "Contact form" }

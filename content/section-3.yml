@@ -76,4 +76,4 @@ body:
 
 pager:
   prev: { ref: "section-2.key-regulations", label: "Previous section", title: "2.5 Key Regulations" }
-  next: { ref: "section-4",                 label: "Next section",     title: "4. BR-UK AI Advice Sessions" }
+  next: { ref: "section-4",                 label: "Next section",     title: "4. BR-UK AI Webinars and Advice Sessions" }

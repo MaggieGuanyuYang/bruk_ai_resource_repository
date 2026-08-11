@@ -16,6 +16,9 @@ lit-review.png
 section-1.png
 section-2-after.png
 mobile-menu-open.png
+live-now.png
+sec1-*.png
+*-unsplash.jpg
 
 # Local server logs
 *.log
@@ -24,3 +27,9 @@ mobile-menu-open.png
 .build-baseline/
 __pycache__/
 *.pyc
+
+# Real prior-revision documents kept locally for reference, not for the public repo.
+# The incoming request documents are the same class of internal editorial material
+# and must not reach the public repo either.
+previous_updates/
+Revision request*.docx

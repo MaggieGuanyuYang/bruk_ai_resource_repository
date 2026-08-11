@@ -257,10 +257,46 @@ def _r_quicknav(payload, current, pages, indent):
     return "\n".join(lines)
 
 
+_TOOL_GRID_HEADING_LEVELS = {"h2", "h3", "h4", "h5"}
+
+
 def _r_tool_grid(payload, current, pages, indent):
+    """Render a grid of tool cards.
+
+    `payload` is normally a plain list of tool mappings. The mapping form
+    `{heading_level: "h4", items: [...]}` exists so a grid can sit under an h3
+    section heading without its card names becoming siblings of that heading:
+    card names default to h3, which is correct only when the preceding section
+    heading is an h2.
+
+    Note: each `desc` has its whitespace collapsed to a single line before the
+    markdown pass, so a multi-line `desc` is fine for prose but a bullet list
+    written inside one will be flattened into a run-on sentence.
+    """
+    if isinstance(payload, dict):
+        # Fail loudly rather than rendering an empty grid: a misspelled `items`
+        # key would otherwise drop a whole tool grid from a published page with
+        # `--check` still passing. render_blocks() turns this into a message
+        # naming the page and source file.
+        if "items" not in payload:
+            raise KeyError("items")
+        items = payload["items"]
+        level = payload.get("heading_level", "h3")
+    else:
+        items, level = payload, "h3"
+    if not isinstance(items, list):
+        raise ValueError(
+            f"tool_grid `items` must be a list on page {current.page_id}, "
+            f"got {type(items).__name__}"
+        )
+    if level not in _TOOL_GRID_HEADING_LEVELS:
+        raise ValueError(
+            f"tool_grid `heading_level` must be one of "
+            f"{sorted(_TOOL_GRID_HEADING_LEVELS)} on page {current.page_id}, got {level!r}"
+        )
     pad = " " * indent
     lines = [f"{pad}<div class=\"tool-grid\">"]
-    for t in payload:
+    for t in items:
         if "name" not in t or "desc" not in t:
             raise KeyError(
                 f"tool_grid item is missing 'name' or 'desc' on page {current.page_id}: {t!r}"
@@ -272,7 +308,7 @@ def _r_tool_grid(payload, current, pages, indent):
             name_html = f'{name_html} <span class="tool-card__tag">{safe_amp(t["tag"])}</span>'
         desc_html = strip_p_wrapper(render_markdown(" ".join(t["desc"].split())))
         lines.append(f"{pad}  <div class=\"tool-card\">")
-        lines.append(f"{pad}    <h3 class=\"tool-card__name\">{name_html}</h3>")
+        lines.append(f"{pad}    <{level} class=\"tool-card__name\">{name_html}</{level}>")
         lines.append(f"{pad}    <p class=\"tool-card__desc\">{desc_html}</p>")
         if t.get("link_url"):
             lines.append(f'{pad}    <a class="tool-card__link" href="{t["link_url"]}">{safe_amp(t.get("link_text", ""))}</a>')

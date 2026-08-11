@@ -1,0 +1,46 @@
+# statement.html — BR-UK Statement (Section 5).
+# Renamed from about.yml in Aug 2026 at the editor's request so the published
+# URL is /statement.html rather than /about.html. Page IDs derive from
+# filenames, so every cross-page `ref:` now points at "statement".
+
+title: "Section 5: BR-UK Statement | Using AI for Behavioural Research Effectively and Responsibly"
+description: "BR-UK is developing a living statement on using AI for behavioural research effectively and responsibly, now out for community consultation."
+
+breadcrumb:
+  - { ref: "home", label: "Home" }
+  - { label: "Section 5: BR-UK Statement" }
+
+badge: "Section 5 · Living document"
+heading: "BR-UK Statement"
+
+# This page renders an extra subtitle <h2> directly under the H1 (only used here).
+h2_alt:
+  text: "Using AI for Behavioural Research Effectively and Responsibly"
+
+body:
+  - prose:
+      - lede:
+          font_size: "1.1rem"
+          text: |
+            BR-UK is developing a living statement addressing ethical standards, practical
+            benefits and limitations, and recommendations for people doing, using, funding,
+            or commissioning behavioural research. It is informed by AI-assisted evidence
+            review, expert consultation and community engagement.
+      - markdown: |
+          We are currently conducting consultations with the wider behavioural research
+          community to gather feedback on a draft of the statement before publication.
+
+          The first version will be published on **Wellcome Open Research** later this year.
+      - subpage_list:
+          style: "grid-template-columns: 1fr"
+          items:
+            - href: "https://osf.io/ep6jw/overview"
+              title: "View the draft for consultation on the Open Science Framework"
+            - href: "https://www.youtube.com/watch?v=QX8TcxM_uc8"
+              title: "Watch the consultation session (YouTube, with adverts)"
+            - href: "https://media.ed.ac.uk/media/Statement%20on%20use%20of%20AI%20in%20behavioural%20research%20-%20Community%20Session/1_sg9lwpic"
+              title: "Watch the consultation session (Media Hopper, no adverts)"
+
+pager:
+  prev: { ref: "section-4", label: "Previous section", title: "4. BR-UK AI Webinars and Advice Sessions" }
+  next: { ref: "section-5", label: "Next section",     title: "6. Disclaimer &amp; Contact" }
