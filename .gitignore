@@ -28,8 +28,16 @@ sec1-*.png
 __pycache__/
 *.pyc
 
-# Real prior-revision documents kept locally for reference, not for the public repo.
-# The incoming request documents are the same class of internal editorial material
-# and must not reach the public repo either.
+# Internal editorial documents — must never reach the public repo.
+# Deliberately a blanket *.docx rule rather than "Revision request*.docx":
+#   - no Word document is ever part of the published site (nothing tracked, nothing
+#     referenced by content/, templates/ or assets/), so there is nothing to lose;
+#   - request documents arrive with inconsistent names ("Revision request_home",
+#     "Revision request 1.1 …", "Revision-request …"), and a narrow pattern misses
+#     variants;
+#   - gitignore matching is only case-insensitive here because macOS sets
+#     core.ignorecase=true. On a case-sensitive checkout a narrow pattern would
+#     silently stop matching.
+# If a .docx ever does belong in the repo, add it explicitly with `git add -f`.
 previous_updates/
-Revision request*.docx
+*.docx
