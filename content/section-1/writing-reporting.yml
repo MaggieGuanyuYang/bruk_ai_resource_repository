@@ -58,6 +58,13 @@ body:
           - { url: "https://notebooklm.google/", name: "NotebookLM", tag: "Free",           desc: "Its podcast creation function offers a novel way to disseminate your research. Simply upload your protocols or written reports, and a 15-minute podcast between two AI characters will be generated. You can even jump in during the \"broadcast\" to ask the AI questions.", link_url: "https://artificialthought.substack.com/", link_text: "Listen to Artificial Thought podcast" }
           - { url: "https://gamma.app/",         name: "Gamma AI",  tag: "Free &amp; paid", desc: "Particularly useful for generating slides. Excels at transforming text-based inputs — prompts, outlines, or existing documents — into polished, visually engaging presentations. Great for conferences, lectures, or public engagement.", link_url: "https://www.youtube.com/watch?v=AMCwO4UZAA8", link_text: "Watch a video tutorial" }
           - { url: "https://www.napkin.ai/",     name: "Napkin AI", tag: "Free",           desc: "A visualisation platform that transforms your writing into graphs. If you're preparing visuals for a slide deck, Napkin AI can suggest effective and engaging ways to organise your ideas graphically — helping you move away from text-heavy slides. It also assists in designing research posters that communicate your message more effectively." }
+      # Sits after the grid, matching the Publication section above: specialist
+      # tools first, then the general-purpose alternative.
+      - markdown: |
+          You do not always need a dedicated tool: [Claude](https://claude.ai/) and
+          [ChatGPT](https://chatgpt.com/) can generate a slide deck straight from your draft
+          or an uploaded paper, usually as a file you can download and edit. Expect a plainer
+          result than the tools above, but a faster route than starting from a blank page.
       - h2: { id: "further", text: "Further reading" }
       - markdown: |
           - [Using artificial intelligence in academic writing and research: An essential productivity tool](https://www.sciencedirect.com/science/article/pii/S2666990024000120#sec0003)
