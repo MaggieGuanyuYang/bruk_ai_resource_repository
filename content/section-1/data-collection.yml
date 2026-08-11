@@ -26,7 +26,7 @@ body:
           items:
             - { href: "#help",            label: "What AI can help with" }
             - { href: "#tools",           label: "Tools" }
-            - { href: "#chatbots-qual",   label: "Chatbots for qualitative data collection" }
+            - { href: "#chatbots-qual",   label: "Chatbots compared with web surveys" }
             - { href: "#interventions",   label: "Delivering interventions" }
             - { href: "#synthetic",       label: "Synthetic data and populations" }
       - h2: { id: "help", text: "What AI can help with" }
