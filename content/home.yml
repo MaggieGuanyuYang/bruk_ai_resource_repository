@@ -68,7 +68,7 @@ section_cards:
     num: "Section 3"
     title: "General AI Learning Resources"
     desc: |
-      A curated set of courses, webinars, and YouTube channels — from Elements of AI
+      A curated set of courses and YouTube channels — from Elements of AI
       and Harvard CS50 to researcher-specific tutorials and advanced deep-learning
       courses.
     meta: "Courses, videos, podcasts"

@@ -1,7 +1,7 @@
 # section-3.html — General AI Learning Resources.
 
 title: "Section 3: General AI Learning | BR-UK"
-description: "A curated set of AI learning resources for behavioural researchers — webinars, online courses, YouTube channels, and advanced deep-learning programmes."
+description: "A curated set of AI learning resources for behavioural researchers — online courses, YouTube channels, and advanced deep-learning programmes."
 
 breadcrumb:
   - { ref: "home", label: "Home" }
@@ -15,22 +15,14 @@ body:
       - lede:
           font_size: "1.12rem"
           text: |
-            A curated set of learning resources, including webinars, courses, and videos —
+            A curated set of learning resources, including courses and videos —
             from beginner-friendly primers to advanced deep-learning programmes. Use these
             to build intuition about how AI works before applying it in your own research.
       - quicknav:
           items:
-            - { href: "#bruk-webinars", label: "BR-UK AI Webinars" }
             - { href: "#online-courses", label: "Online courses" }
             - { href: "#youtube",        label: "YouTube channels" }
             - { href: "#advanced",       label: "Advanced learning" }
-      - h2: { id: "bruk-webinars", text: "BR-UK AI Webinars" }
-      - markdown: |
-          BR-UK has conducted three webinars on AI in behavioural research — available on demand via [our webinars & events page](https://usher.ed.ac.uk/behavioural-research-uk/webinars-events/upcoming-webinars):
-
-          - [Using Artificial Intelligence to improve Behavioural Research](https://media.ed.ac.uk/media/BR-UK+%3A+Using+AI+to+Improve+Behavioural+Research/1_qv7xyowy/370463662)
-          - [Using Analytic AI to improve Behavioural Research](https://media.ed.ac.uk/media/Behavioural+Research+UK%3A+Using+Analytic+AI+to+improve+Behavioural+Research/1_jntcg6ha)
-          - [Responsible use of AI in behavioural research](https://media.ed.ac.uk/media/Responsible+use+of+AI+in+behavioural+research/1_1t0mu0vb)
       - h2: { id: "online-courses", text: "Online courses" }
       - tool_grid:
           - name: "Elements of AI"
