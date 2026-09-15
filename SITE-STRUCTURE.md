@@ -122,7 +122,7 @@ they live in **`content/_site.yml`**.
 | What you see on every page | Where in `content/_site.yml` |
 | --- | --- |
 | Logo image | `brand.logo` |
-| Brand text "AI Tools & Resources" | `brand.name` |
+| Brand text "AI Tools & Resource Repository" | `brand.name` |
 | Tagline "Behavioural Research UK" | `brand.tag` |
 | Top navigation labels (Home, 1. Living Guide, …) | `nav` |
 | Footer "About BR-UK" paragraph | `footer.about` |
@@ -130,6 +130,11 @@ they live in **`content/_site.yml`**.
 | Footer "Get in touch" link list | `footer.contact` |
 | Footer copyright line | `footer.copyright` |
 | Footer "A living repository · Last content review …" | `footer.status` |
+
+The white header uses a cropped version of the official colour logo, with the
+repository name above the BR-UK tagline. Desktop navigation occupies its own row;
+at 1160px and below it opens from the menu button. The layout lives in
+`assets/css/style.css` and the shared markup in `templates/_base.html`.
 
 The home page has a slightly fuller footer (it lists the Privacy Statement
 PDF and includes "comprising partner institutions and government bodies

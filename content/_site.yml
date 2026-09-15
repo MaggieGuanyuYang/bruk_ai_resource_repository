@@ -2,9 +2,9 @@
 # Per-page YAML files override individual fields where needed (see home.yml).
 
 brand:
-  name: "AI Tools & Resources"
+  name: "AI Tools & Resource Repository"
   tag: "Behavioural Research UK"
-  logo: "assets/BR-UK_LogoIcon_White.svg"
+  logo: "assets/BR-UK_LogoIcon_Header.svg"
   logo_alt: ""
   href: "index.html"          # the brand link target (resolved as a ref below)
   href_ref: "home"

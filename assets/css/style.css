@@ -49,10 +49,8 @@
 
 /* ----- Reset + base ----- */
 *, *::before, *::after { box-sizing: border-box; }
-/* scroll-padding-top keeps `quicknav` anchor jumps clear of the sticky header.
-   Size it for the TALLEST desktop header: the nav needs two rows between 901px
-   and ~1160px (170px total) and one row above that (130px). 11rem clears both. */
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 11rem; }
+/* Keep anchor targets clear of the sticky brand and navigation rows. */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 9rem; }
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -116,8 +114,9 @@ hr {
 
 /* ----- Header / navigation ----- */
 .site-header {
-  background: var(--teal-700);
-  border-bottom: none;
+  background: var(--white);
+  border-top: 3px solid var(--teal-700);
+  border-bottom: 1px solid var(--ink-200);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -125,83 +124,106 @@ hr {
 .site-header__inner {
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0.7rem 1.5rem;
-  display: flex;
+  padding: 1rem 1.5rem 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "brand toggle" "nav nav";
   align-items: center;
-  gap: 2rem;
-  justify-content: space-between;
-  /* The brand plus six numbered nav links need ~1390px on one line, so the nav
-     drops onto its own row on anything narrower — and onto two rows below
-     ~1160px. Below 900px it collapses into the hamburger menu instead; see the
-     media query further down, and keep `scroll-padding-top` in step with the
-     tallest resulting header. */
-  flex-wrap: wrap;
+  column-gap: 1rem;
 }
 .brand {
+  grid-area: brand;
+  justify-self: start;
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.85rem;
+  min-width: 0;
+  padding-bottom: 1rem;
   text-decoration: none;
-  color: var(--white);
-  flex-shrink: 0;
+  color: var(--ink-900);
 }
-.brand:hover { text-decoration: none; color: rgba(255,255,255,0.85); }
+.brand:hover { text-decoration: none; color: var(--teal-700); }
 .brand__mark-img {
-  width: 40px; height: 40px;
+  width: 44px; height: 44px;
   display: block;
   flex-shrink: 0;
   object-fit: contain;
 }
 .brand__text {
-  display: flex; flex-direction: column; line-height: 1.15;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+  line-height: 1.25;
 }
-.brand__name { font-weight: 700; font-size: 0.92rem; color: var(--white); }
-.brand__tag  { font-size: 0.74rem; color: rgba(255,255,255,0.92); }
+.brand__name { font-weight: 700; font-size: 1.22rem; letter-spacing: -0.025em; }
+.brand__tag { font-size: 0.78rem; color: var(--ink-500); }
 
-.nav { display: flex; gap: 0.3rem; row-gap: 0.2rem; align-items: center; flex-wrap: wrap; }
-.nav a {
-  color: rgba(255,255,255,0.88);
-  text-decoration: none;
-  font-size: 0.88rem;
-  font-weight: 500;
-  padding: 0.4rem 0.55rem;
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-  transition: background .15s ease, color .15s ease;
+.nav {
+  grid-area: nav;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  border-top: 1px solid var(--ink-200);
 }
-.nav a:hover { color: var(--white); background: rgba(255,255,255,0.12); }
-.nav a.is-active { color: var(--white); background: rgba(255,255,255,0.18); font-weight: 600; }
-.nav a:focus-visible { outline: 2px solid rgba(255,255,255,0.6); outline-offset: 2px; }
+.nav a {
+  color: var(--ink-500);
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0.85rem 0.55rem 0.7rem;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+.nav a:hover { color: var(--teal-700); background: var(--teal-50); }
+.nav a.is-active { color: var(--teal-800); border-bottom-color: var(--teal-700); font-weight: 600; }
+.nav a:focus-visible { outline: 2px solid var(--teal-600); outline-offset: -2px; }
 
 .nav-toggle {
+  grid-area: toggle;
   display: none;
-  background: none;
-  border: 1px solid rgba(255,255,255,0.35);
-  border-radius: var(--radius-sm);
-  padding: 0.4rem 0.55rem;
-  color: var(--white);
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  background: var(--white);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-md);
+  padding: 0;
+  color: var(--teal-700);
   cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
 }
+.nav-toggle:hover, .nav-toggle[aria-expanded="true"] { background: var(--teal-50); border-color: var(--teal-200); }
+.nav-toggle:focus-visible { outline: 2px solid var(--teal-600); outline-offset: 3px; }
+.nav-toggle__close, .nav-toggle[aria-expanded="true"] .nav-toggle__open { display: none; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__close { display: block; }
 
-@media (max-width: 900px) {
-  /* The collapsed header is ~62px, so anchors need less clearance here. */
-  html { scroll-padding-top: 4.5rem; }
-  .nav-toggle { display: inline-flex; }
+@media (max-width: 1160px) {
+  html { scroll-padding-top: 7rem; }
+  .site-header__inner { padding: 1rem 1.5rem; }
+  .brand { padding-bottom: 0; }
+  .nav-toggle { display: grid; }
   .nav {
-    width: 100%;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    border-top: 1px solid rgba(255,255,255,0.15);
     padding-top: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    max-height: calc(100dvh - 7rem);
+    overflow-y: auto;
     display: none;
   }
   .nav.is-open { display: flex; }
-  .nav a { padding: 0.65rem 0.55rem; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .nav a:last-child { border-bottom: none; }
+  .nav a { padding: 0.8rem 0.75rem; border: 0; border-radius: var(--radius-sm); }
+  .nav a.is-active { background: var(--teal-50); }
+}
+@media (max-width: 560px) {
+  .site-header__inner { padding: 0.85rem 1rem; column-gap: 0.75rem; }
+  .brand { gap: 0.6rem; }
+  .brand__mark-img { width: 34px; height: 34px; }
+  .brand__name { font-size: 1rem; }
+  .brand__tag { font-size: 0.69rem; }
 }
 
 /* ----- Hero ----- */
