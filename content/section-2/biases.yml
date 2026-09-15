@@ -23,9 +23,9 @@ body:
       - markdown: |
           AI is increasingly used in high-pressure jobs like policing, where officers must make quick decisions with limited information. While these tools aim to support judgement, research shows they can embed and reinforce bias in a feedback loop through the following:
 
-          1. Biased data
-          2. Biased judgements
-          3. Biased outcomes
+          1. **Biased Data:** AI tools are trained on historical data, including past arrest records or incident reports that already reflect systemic inequalities.
+          2. **Biased Judgements:** The AI then provides officers with skewed information, influencing how they interpret and respond to a situation.
+          3. **Biased Outcomes:** These responses, in turn, are documented in new reports, which feed back into future training data for the AI model.
 
           Over time, this cycle of bias reinforces and amplifies the original bias, even when individuals are acting in good faith. Flawed data, tools, and human decision-making become entangled in a self-reinforcing loop.
 
@@ -34,17 +34,17 @@ body:
       - markdown: |
           AI bias doesn't demand a complete rethinking of science, but it does come with **special responsibilities** for researchers using these tools:
 
-          - **Scrutinise your data** — understand where it came from and who it represents.
-          - **Disclose your methods** — make it easy for others to see how AI shaped your findings.
-          - **Verify outputs** — don't assume AI is correct; check it is.
-          - **Engage communities** — especially those who might be affected by your research.
-          - **Be accountable** — you, not the tool, are responsible for the research.
+          - **Scrutinise your data:** Who does it represent and who is missing?
+          - **Disclose your methods:** Be transparent about how AI was used, including prompt design and data processing steps.
+          - **Verify outputs:** Always include human oversight, especially when using generative models.
+          - **Engage communities:** Collaborate with affected populations to identify and mitigate potential harms.
+          - **Be accountable:** Researchers are responsible for the quality and fairness of AI-informed findings.
 
           Ultimately, researchers must use their judgement and expertise not only to apply AI effectively but also to challenge and improve it to uphold the values of rigorous, ethical, and inclusive science.
       - h2: "Further reading"
       - markdown: |
           - [Read more on emerging AI Bias and Error concerns in research](https://link.springer.com/article/10.1007/s43681-024-00493-8)
-          - [Read more about AI bias and errors](https://link.springer.com/article/10.1007/s43681-024-00493-8#Sec14)
+          - [Read more about the inherent bias in AI models](https://journals.sagepub.com/doi/10.1177/29768624251408919)
 
 pager:
   prev: { ref: "section-2.disclosure", label: "Previous topic", title: "Disclosure &amp; Transparency" }

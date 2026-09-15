@@ -20,25 +20,78 @@ body:
             Learn about the opinions on AI use from a range of UK funders — including the
             joint statement from the Research Funders Policy Group, and pointers to the
             individual policies of the major UK funding bodies.
-      - h2: "Joint funder statement: use of generative AI tools in funding applications and assessment"
+      - raw: '<section class="resource-panel resource-panel--statement" aria-labelledby="joint-statement">'
+      - h2:
+          id: "joint-statement"
+          text: "Joint funder statement: use of generative AI tools in funding applications and assessment"
       - markdown: |
-          On behalf of our Research Funders Policy Group, we recognise Generative Artificial Intelligence (AI) tools, such as ChatGPT or Bard, present opportunities and bring benefits in the context of research such as supporting content generation for computer code or assisting neurodivergent researchers or reducing potential language barriers.
+          *Statement revised June 2026. Checked 15 September 2026.*
+      - blockquote:
+          body: |
+            ### Definition: Generative Artificial Intelligence (AI) tools
 
-          However, the use of Generative AI tools in the funding application and assessment process also presents potential risks for research in areas such as rigour, transparency, originality, reliability, data protection, confidentiality, intellectual property, copyright, and bias. We want to protect against potential ethical, legal and integrity issues in the use of generative AI tools to maintain the high standards of the research and innovation we fund.
+            AI that can be used to create new content (for example text, images, data, code, videos) based on instructions (prompts) provided by the user.
 
-          When developing funding proposals, researchers must ensure generative AI tools are used responsibly and in accordance with relevant legal and ethical standards where these exist or as they develop. As best practice, any outputs from generative AI tools in funding applications should be acknowledged. Where individual funders wish to apply further specific restrictions, this will be explicitly stated.
+            On behalf of research funders in our Research Funders Policy Group, we recognise Generative Artificial Intelligence (AI) tools, such as ChatGPT, Co-pilot, Claude or Gemini, present opportunities and bring benefits in the context of research such as supporting content generation for computer code or assisting neurodivergent researchers or reducing potential language barriers.
 
-          Maintaining confidentiality is essential for safeguarding the exchange of scientific opinions and assessments. As such, our peer reviewers must not input content from our confidential funding applications or reviews into, or use, generative AI tools to develop their peer review critiques or applicant responses to critiques. Our peer reviewers are selected for their expertise and experience in their field and we value their unique perspectives.
+            However, the use of Generative AI tools in the funding application and assessment process also presents potential risks for research in areas such as rigour, transparency, originality, reliability, data protection, confidentiality, intellectual property, copyright, and bias.
 
-          We're taking this proactive and collective approach to set our high-level expectations whilst we develop our own, detailed individual funding policies. Generative AI tools will continue to grow and bring new considerations — both exciting and challenging. We'll work together to evaluate the effectiveness of this approach, monitor developments, and minimise bureaucracy.
+            As research funders, our role is to:
 
-          *Statement published: 19 September 2023*
-      - h2: "Links to funders"
+            - Promote and support innovation in research whilst mitigating potential risks. We set clear requirements and raise awareness to protect against potential ethical, legal and integrity issues in the use of generative AI tools to maintain the high standards of the research and innovation we fund.
+            - Maintain integrity and trust in our funding processes and decisions. Our reviewers are selected for their expertise and experience in their field, and we value their unique perspectives.
+
+            ### Use by applicants
+
+            Applicants can use generative AI when preparing a funding application if tools are used responsibly and in accordance with relevant legal and ethical standards where these exist or as they develop.
+
+            Examples of use include:
+
+            - translating applications from other languages to English
+            - improving the standard of English
+            - formatting or reducing word count
+            - assisting idea generation or development of hypotheses
+            - interpreting, analysing or summarising data (including audio, image files) and text
+            - comparing literature sources
+            - generating or refining code
+            - generating an abstract
+
+            Applicants must not use generative AI tools:
+
+            - for uses that would breach our standard research integrity expectations. Examples include:
+                - fabricating, falsifying, manipulating, duplicating, altering original data, images or results
+                - plagiarism – using other people’s ideas, intellectual property or work without acknowledgement or permission
+                - breaching data protection rules or intellectual property rights
+                - misrepresenting or falsifying information, for example, qualifications gained
+                - faking citations or references
+            - to generate an entire application, or sections of an application, without human involvement
+
+            As best practice, any outputs from generative AI tools in funding applications should be acknowledged. Please refer to individual funder policies for any specific applicant declaration requirements.
+
+            ### Use by reviewers
+
+            Reviewers must not input our confidential funding applications into generative AI tools to develop their reviews. Doing this breaches the confidentiality terms under which reviewers conduct our reviews. Maintaining confidentiality and protecting intellectual property of our applicants is essential for safeguarding the exchange of scientific opinions and assessments. Please refer to individual funder policies for requirements.
+
+            ### Use by research funders
+
+            As research funders, our final funding decisions are underpinned by human oversight; we do not use generative AI tools to make funding decisions.
+
+            We may use enterprise data protected (EDP) generative AI tools to process funding applications. These tools have been assessed for security and safety. However, we will not input confidential funding applications into publicly available versions of generative AI tools.
+
+            We’re taking this collective approach to set our high-level joint expectations. Individual funders may publish their own, detailed individual funding policies or procedures. Where individual funders wish to evolve beyond our joint position, this will be explicitly stated.
+
+            Generative AI tools will continue to grow and bring new considerations – both exciting and challenging. We’ll continue to work together to evaluate the effectiveness of this approach, monitor developments, and minimise bureaucracy.
+          cite: |
+            [Research Funders Policy Group joint statement](https://wellcome.org/about-us/positions-and-statements/joint-statement-generative-ai), revised June 2026. © The Wellcome Trust. Reproduced under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); formatting adapted.
+      - h3: "Statement and funder policy links"
       - markdown: |
-          [UKRI](https://www.ukri.org/publications/generative-artificial-intelligence-in-application-and-assessment-policy/use-of-generative-artificial-intelligence-in-application-preparation-and-assessment/) ·
-          [The Research Funders Policy Group made a joint statement](https://wellcome.org/grant-funding/guidance/policies-grant-conditions/use-of-generative-ai)
+          - [Read the full joint statement on Wellcome’s website](https://wellcome.org/about-us/positions-and-statements/joint-statement-generative-ai)
+          - [UKRI: generative AI in application preparation and assessment](https://www.ukri.org/publications/generative-artificial-intelligence-in-application-and-assessment-policy/use-of-generative-artificial-intelligence-in-application-preparation-and-assessment/)
+          - [Wellcome: generative AI in grant applications](https://wellcome.org/research-funding/guidance/policies-grant-conditions/use-of-generative-ai)
       - h3: "Current members of the Research Funders Policy Group"
       - markdown: |
+          The [Research Funders Policy Group](https://wellcome.org/research-funding/guidance/policies-grant-conditions/research-funders-policy-group) lists the following current members. Check each funder’s own policy for its specific requirements.
+
           - Association of Medical Research Charities (AMRC)
           - British Heart Foundation (BHF)
           - Cancer Research UK (CRUK)
@@ -46,9 +99,11 @@ body:
           - Royal Academy of Engineering
           - Royal Society
           - UK Research and Innovation (UKRI)
+          - Wellcome
+      - raw: '</section>'
       - h2: "Other major funding charities"
       - markdown: |
-          - [The Wellcome Trust](https://wellcome.org/grant-funding/guidance/policies-grant-conditions/use-of-generative-ai)
+          - [The Wellcome Trust](https://wellcome.org/research-funding/guidance/policies-grant-conditions/use-of-generative-ai)
           - [The Leverhulme Trust](https://www.leverhulme.ac.uk/)
       - h2: "The National Academies"
       - markdown: |

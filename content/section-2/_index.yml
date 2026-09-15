@@ -24,10 +24,7 @@ body:
   - subpage_list:
       - ref: "section-2.disclosure"
         title: "Disclosure &amp; Transparency"
-        blurb: "When and how to disclose AI use; with dedicated guides for publishers and UK funders below."
-        children:
-          - { ref: "section-2.publishers", label: "↳ What publishers said about AI use <em>(Nature, Elsevier, SAGE, Wiley, APA, and more)</em>" }
-          - { ref: "section-2.uk-funders", label: "↳ What UK funders said about AI use <em>(UKRI, Wellcome, Leverhulme, British Academy, and more)</em>" }
+        blurb: "When and how to disclose AI use, including publisher and UK funder guidance."
       - ref: "section-2.biases"
         title: "Biases"
         blurb: "How AI systems amplify existing biases — with a real-world policing example."
@@ -39,19 +36,71 @@ body:
         blurb: "Energy, water, carbon, and the supply chain — plus how AI might still be part of the solution."
       - ref: "section-2.key-regulations"
         title: "Key Regulations"
-        blurb: "Copyright (CDPA 1988), UK GDPR, international and UK regulations, and university guidance."
+        blurb: "International frameworks, UK copyright and data protection, and guidance from your own institution."
   - prose:
-      - h2: "Three questions to ask before you integrate AI"
+      - h2: "Considerations for Responsible AI Use in Research and Innovation"
       - markdown: |
-          1. What are the tangible benefits?
-          2. What is the potential impact, and are there ethical concerns?
-          3. Is AI the only way to achieve the desired outcome?
+          The figure below presents a decision aid for researchers. It is an adapted version of the [Responsible Research and Innovation (RRI) decision aid](https://tas.ac.uk/responsible-research-innovation/rri-prompts-and-practice-cards/). The framework prompts researchers to anticipate potential benefits and risks, reflect on conflicts and consequences, engage with stakeholders, and act to shape responsible research and innovation. We present an adapted version of the prompts, building on guidance from the [UK Research Integrity Office](https://ukrio.org/ukrio-resources/embracing-ai-with-integrity/) on responsible AI use. Each prompt targets one decision: whether and how to use generative AI in a specific project.
+
+          We encourage the behavioural research community to view AI adoption as an ongoing process of deliberation rather than a one-time decision, recognising that best practices will continue to evolve.
+      - raw: |
+          <figure class="decision-aid">
+            <img src="../assets/responsible-ai-decision-aid.png" width="936" height="529" loading="lazy" alt="Before Using AI in Your Research: a decision aid with four stages — Anticipate, Reflect, Engage and Act — each containing four prompts. A full text version is available below." aria-describedby="decision-aid-caption">
+            <figcaption id="decision-aid-caption">This figure is adapted from Responsible Research and Innovation Prompts and Practice Cards developed by the Horizon Digital Economy Research Institute at the University of Nottingham, in collaboration with the Trustworthy Autonomous Systems Hub. The original and more detailed cards can be accessed at <a href="https://doi.org/10.17639/nott.7353">doi.org/10.17639/nott.7353</a>. The original cards are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+          </figure>
+          <p><a href="../assets/responsible-ai-decision-aid.png">Open the full-size decision aid</a></p>
+          <details class="decision-aid-text">
+            <summary>Read the decision aid as text</summary>
+            <h3>Anticipate</h3>
+            <dl>
+              <dt>Intention</dt>
+              <dd>What benefits will using AI bring, and how can this be measured? Who will benefit?</dd>
+              <dt>Sustainability</dt>
+              <dd>What are the sustainability implications of AI use (what model is being used, for how long, etc)</dd>
+              <dt>People Affected</dt>
+              <dd>Who would be affected by the outcomes of the research? Who could be excluded due to AI use?</dd>
+              <dt>Project Risks</dt>
+              <dd>What risks might participants, team members, or other stakeholders be exposed to? How can they be mitigated?</dd>
+            </dl>
+            <h3>Reflect</h3>
+            <dl>
+              <dt>Potential Conflicts</dt>
+              <dd>What legislation and regulation apply to AI use in this research? Who might be opposed to it? What reasons are there NOT to use it?</dd>
+              <dt>Unintended consequences</dt>
+              <dd>What negative consequences (e.g., risks to research integrity) could using AI in this research have? What might happen if AI use goes wrong?</dd>
+              <dt>Equality, Diversity &amp; Inclusion</dt>
+              <dd>How representative is the model you plan to use for AI use? What are the well-known biases and how will this affect your outcomes?</dd>
+              <dt>Means of Reflection</dt>
+              <dd>What assumptions do the team have about AI use in research? Does everyone understand AI?</dd>
+            </dl>
+            <h3>Engage</h3>
+            <dl>
+              <dt>Public Dialogue</dt>
+              <dd>Is the research known to the wider public and other groups? What are their perspectives on AI use in this context?</dd>
+              <dt>Stakeholder Input</dt>
+              <dd>How can stakeholders influence the method or outputs? What stakeholders are considered, when, and at what stage?</dd>
+              <dt>Under-represented</dt>
+              <dd>Are any stakeholders under-represented, overlooked, or excluded?</dd>
+              <dt>Stakeholder Involvement</dt>
+              <dd>Can stakeholders have more substantial involvement in the research and shaping the use of AI?</dd>
+            </dl>
+            <h3>Act</h3>
+            <dl>
+              <dt>Shaping the Future</dt>
+              <dd>How can this research be used to inform wider discussion of AI use in research?</dd>
+              <dt>Openness</dt>
+              <dd>How can others build on this research? Is relevant information on AI use disclosed?</dd>
+              <dt>Training &amp; Equipping</dt>
+              <dd>What training do team members need to critically evaluate AI use in this research? Do they understand how the model works?</dd>
+              <dt>Continuous Improvement</dt>
+              <dd>What actions can be taken throughout the project to learn more effectively from AI use and support responsible use?</dd>
+            </dl>
+          </details>
       - h2: "Recommended starting reads"
       - markdown: |
           - [Embracing AI with integrity: A practical guide for researchers](https://ukrio.org/ukrio-resources/embracing-ai-with-integrity/) — UKRIO
           - [Living guidelines on the responsible use of generative AI in research](https://research-and-innovation.ec.europa.eu/document/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en) — European Commission
           - [MIT AI Risk Repository](https://airisk.mit.edu/)
-          - Slattery, P. et al. (2024). [A systematic literature review of AI-related risks](https://doi.org/10.48550/arXiv.2408.12622).
 
 pager:
   prev: { ref: "section-1.writing-reporting", label: "Previous section", title: "1.5 Writing &amp; Reporting" }
