@@ -317,7 +317,39 @@ def _r_tool_grid(payload, current, pages, indent):
     return "\n".join(lines)
 
 
+def _r_stage_list(payload, current, pages, indent):
+    """Render research stages as an ordered list of numbered navigation cards."""
+    pad = " " * indent
+    label = payload.get("labelledby")
+    labelledby = f' aria-labelledby="{html_escape(label, quote=True)}"' if label else ""
+    lines = [f'{pad}<ol class="research-stage-list" role="list"{labelledby}>']
+    for number, item in enumerate(payload.get("items", []), start=1):
+        url = ref_to_relative(item["ref"], current, pages) if "ref" in item else item["href"]
+        lines.extend([
+            f"{pad}  <li>",
+            f'{pad}    <a class="stage-card" href="{html_escape(url, quote=True)}">',
+            f'{pad}      <span class="stage-card__number" aria-hidden="true">{number:02d}</span>',
+            f'{pad}      <div class="stage-card__body">',
+            f'{pad}        <h3 class="stage-card__title">{safe_amp(item["title"])}</h3>',
+        ])
+        if item.get("blurb"):
+            blurb = safe_amp(" ".join(item["blurb"].split()))
+            lines.append(f'{pad}        <p class="stage-card__description">{blurb}</p>')
+        lines.extend([
+            f"{pad}      </div>",
+            f'{pad}      <span class="stage-card__arrow" aria-hidden="true">',
+            f'{pad}        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>',
+            f"{pad}      </span>",
+            f"{pad}    </a>",
+            f"{pad}  </li>",
+        ])
+    lines.append(f"{pad}</ol>")
+    return "\n".join(lines)
+
+
 def _r_subpage_list(payload, current, pages, indent):
+    if isinstance(payload, dict) and payload.get("variant") == "stages":
+        return _r_stage_list(payload, current, pages, indent)
     if isinstance(payload, list):
         items = payload
         style = None

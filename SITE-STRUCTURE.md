@@ -196,13 +196,16 @@ the developer can find it instantly.
 | Lede paragraph | `body` → first `lede` |
 | "Not sure where to start?" list of three external resources, fenced by a horizontal rule above and below | `body` → `raw` (`<hr>`) + `markdown` + `raw` (`<hr>`) |
 | "Jump to a stage of your research" heading | `body` → `h2` |
-| Five linked cards (Stage 1–5) | `body` → `subpage_list` (one entry per card) |
+| Five numbered, full-width stage cards | `body` → `subpage_list` with `variant: "stages"` and one entry per card in `items` |
 | "A Note on Responsible Use" callout box | `body` → `callout` |
 | Prev / next navigation | `pager` |
 
 > The starter list is deliberately kept off the heading hierarchy (bold lead-in,
 > not an `h2`) so "Jump to a stage of your research" stays the page's only `h2`
 > and the sub-page list reads as the main path.
+
+The stage list uses `labelledby: "research-stages"` to connect it to the heading.
+Each item contains `ref`, `title`, and `blurb`; stage numbers follow the item order.
 
 ## Section 1 sub-pages — common shape
 
