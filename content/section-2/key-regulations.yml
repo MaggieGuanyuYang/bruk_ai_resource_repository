@@ -14,9 +14,7 @@ heading: "Key Regulations"
 body:
   - prose:
       - lede: |
-          Use these links to find the laws and guidance relevant to AI in your research,
-          from international frameworks to UK requirements and your own institution’s
-          policies. Check the original sources for their scope and latest updates.
+          Before using AI in your research, understand the laws and guidance relevant to your research project and context, from international frameworks to UK-specific requirements and your own institution’s policies. See examples of relevant sources below.
       - raw: '<section class="resource-panel" aria-labelledby="international-frameworks">'
       - h2: { id: "international-frameworks", text: "International frameworks and guidance" }
       - markdown: |
