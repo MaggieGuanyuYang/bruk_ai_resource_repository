@@ -27,7 +27,7 @@ body:
           - **Confirm human oversight** (e.g. whether outputs were reviewed or edited).
           - **Check funder and publisher policies early** in your workflow, as expectations vary.
 
-          Many publishers and funders provide specific guidance on using AI in research. Some require disclosure statements or audit trails, while others prohibit sharing confidential or unpublished work with AI tools. If no clear guidance is available, researchers should contact the relevant organisation directly for clarification.
+          Many publishers and funders provide specific guidance on using AI in research. Some require disclosure statements or audit trails, while others prohibit sharing confidential or unpublished work with AI tools. If no clear guidance is available, researchers should contact the relevant organisation directly for clarification. Researchers can also refer to exemplar reporting guidelines such as [GUIDE-LLM](https://doi.org/10.1038/s41562-026-02492-7) for behavioural research, [PRISMA-trAIce](https://doi.org/10.2196/80247) for systematic reviews using AI, [CONSORT-AI](https://doi.org/10.1038/s41591-020-1034-x) for Randomised Controlled Trials.
       - subpage_list:
           style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.8rem; margin: 2rem 0"
           items:
@@ -73,10 +73,6 @@ body:
       - blockquote:
           body: |
             "During the preparation of this work the author(s) used [NAME TOOL / SERVICE] in order to [REASON]. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the publication."
-      - callout:
-          heading: "Planning a submission or application?"
-          body: |
-            Start with the two dedicated pages above — they compile what major publishers and all UK funders have said about AI use, so you know what's expected before you submit.
 
 pager:
   prev: { ref: "section-2",        label: "Section overview", title: "Section 2: Ethics &amp; Responsibility" }
